@@ -1,10 +1,12 @@
 body {
     background-image: url(/assets/images/parchment-background.jpg);
+    overflow: hidden;
 }
 
-#view-port {
-    position: fixed;
-    bottom: auto;
-    left: auto;
-    height: ;
+#viewport {
+    margin: 70px auto;
+    width: 400px;
+    height: 500px;
+    outline: solid 2px black;
+
 }
