@@ -2,6 +2,7 @@ body {
     background-image: url(/assets/images/parchment-background.jpg);
     width: 100vw;
     height: 100vh;
+    margin: 0;
     overflow: hidden;
 }
 
@@ -27,4 +28,39 @@ body {
     height: 80%;
     width: 90%;
 }
+}
+
+footer {
+    width: 100vw;
+    height: 40px;
+    position: fixed;
+    bottom: 0px;
+    margin: 0;
+}
+
+.copyright {
+    display: inline;
+    padding-left: 5%;
+    font-size: x-large;
+}
+
+.socials {
+    display: inline;
+    float: right;
+    padding-right: 5%;
+    letter-spacing: 10px;
+    font-size: x-large;
+}
+
+.socials
+a {
+    color: black;
+}
+
+.linked:hover {
+    color: #0072b1;
+}
+
+.git:hover {
+    color: #6e5494;
 }
