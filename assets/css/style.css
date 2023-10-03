@@ -1,12 +1,30 @@
 body {
     background-image: url(/assets/images/parchment-background.jpg);
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
 }
 
+/* Viewport sizing code from "sunshine guessing" by aleksandracodes*/
 #viewport {
-    margin: 70px auto;
-    width: 400px;
-    height: 500px;
-    outline: solid 2px black;
+    position: absolute;
+    text-align: center;
+    width: 80%;
+    height: 30rem;
+    max-height: 30rem;
+    max-width: 50rem;
+    box-sizing: border-box;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    padding: 1%;
+    background-color: black;
+}
 
+@media (max-width: 390px){
+#viewport {
+    top: 42%;
+    height: 80%;
+    width: 90%;
+}
 }
