@@ -20,6 +20,8 @@ body {
     transform: translate(-50%, -45%);
     padding: 1%;
     background-color: black;
+    color: #afa7a7;
+    font-family: 'Pixelify Sans', cursive;
 }
 
 @media (max-width: 390px){
@@ -30,6 +32,11 @@ body {
 }
 }
 
+h1 {
+    letter-spacing: 2px;
+}
+
+/*Footer*/
 footer {
     width: 100vw;
     height: 40px;
