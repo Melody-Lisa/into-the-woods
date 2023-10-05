@@ -24,7 +24,7 @@ body {
     font-family: 'Pixelify Sans', cursive;
 }
 
-@media (max-width: 390px){
+@media (max-width: 576px){
 #viewport {
     top: 42%;
     height: 80%;
