@@ -7,7 +7,7 @@ body {
 }
 
 /* Viewport sizing code from "sunshine guessing" by aleksandracodes*/
-#viewport {
+#gameport {
     position: absolute;
     text-align: center;
     width: 80%;
@@ -25,7 +25,7 @@ body {
 }
 
 @media (max-width: 576px){
-#viewport {
+#gameport {
     top: 42%;
     height: 80%;
     width: 90%;
