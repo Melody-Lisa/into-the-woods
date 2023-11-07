@@ -1,3 +1,4 @@
+/* I followed a walkthrough by web dev simplified for the basic structure for the game */
 const textElement = document.getElementById('text')
 const optionButtonsElement = document.getElementById('option-buttons')
 
@@ -8,6 +9,7 @@ function startGame() {
     showTextNode(1)
 }
 
+/* Typing effect from medium.com - I asked chatgpt to convert into vanilla js */
 async function typeSentence(sentence, eleRef, delay = 50) {
     const letters = sentence.split("");
     let i = 0;
@@ -25,13 +27,10 @@ function waitForMs(ms) {
 async function showTextNode(textNodeIndex) {
     const textNode = textNodes.find(textNode => textNode.id === textNodeIndex);
     textElement.innerText = '';
-    optionButtonsElement.style.display = 'none';
 
     if (textNode.text) {
         await typeSentence(textNode.text, textElement);
     }
-
-    optionButtonsElement.style.display = 'block';
 
     while (optionButtonsElement.firstChild) {
         optionButtonsElement.removeChild(optionButtonsElement.firstChild)
