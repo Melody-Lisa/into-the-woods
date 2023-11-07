@@ -49,12 +49,15 @@ h1 {
     bottom: 15px;
     left: 15px;
     margin: 10px;
-    background-color: #afa7a7;
+    background-color: rgba(175, 167, 167, 0.2);
+    box-shadow: 0 0 20px 1px #afa7a7;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
 }
 
+
+/* Buttons */
 .btn-grid {
     position: absolute;
     display: grid;
@@ -67,15 +70,23 @@ h1 {
 
 .btn {
     height: max-content;
+    font-family: 'Pixelify Sans', cursive;
     width: 100px;
     margin: 5px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    border: 1px solid red;
 }
 
 /*Inventory*/
 #inventory {
     width: 150px;
     height: 90%;
-    background-color: #0072b1;
+    background-color: rgba(60, 65, 68, 0.5);
+    background-color: rgba(175, 167, 167, 0.2);
+    box-shadow: 0 0 20px 1px #afa7a7;
     right: 15px;
     position: absolute;
     border-radius: 5px;
