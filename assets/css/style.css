@@ -4,15 +4,17 @@ body {
     height: 100vh;
     margin: 0;
     overflow: hidden;
+    font-family: 'Pixelify Sans', cursive;
+    color: #afa7a7;
 }
 
-/* Container sizing code taken from "sunshine guessing" by aleksandracodes and styled accordingly*/
+/* Containers */
 #game-container {
     position: relative;
     text-align: center;
     width: 80%;
     height: 80%;
-    max-height: 30rem;
+    max-height: 45rem;
     max-width: 50rem;
     box-sizing: border-box;
     top: 45%;
@@ -22,40 +24,58 @@ body {
     padding: 1%;
     border-radius: 5px;
     background-color: black;
-    color: #afa7a7;
-    font-family: 'Pixelify Sans', cursive;
 }
 
-@media (max-width: 576px){
-#game-container {
-    top: 42%;
-    height: 80%;
-    width: 90%;
-}
-}
-
-h1 {
-    letter-spacing: 2px;
+#game-text,
+#inventory {
     position: absolute;
-    left: 50%;
-    transform: translate(-75%);
-}
-
-/* Game Text Box */
-#game-text {
-    position: absolute;
-    height: 300px;
-    width: 60%;
-    bottom: 15px;
-    left: 15px;
+    border-radius: 5px;
     margin: 10px;
+    bottom: 15px;
     background-color: rgba(175, 167, 167, 0.2);
     box-shadow: 0 0 20px 1px #afa7a7;
     border-radius: 5px;
+}
+
+#game-text {
+    position: absolute;
+    height: 75%;
+    width: 60%;
+    left: 15px;
     display: flex;
     flex-direction: column;
 }
 
+#inventory {
+    width: 150px;
+    height: 90%;
+    right: 15px;
+}
+
+/* Content */
+h1 {
+    letter-spacing: 2px;
+    position: absolute;
+    margin-top: 2px;
+    left: 50%;
+    transform: translate(-75%);
+}
+
+.typing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.input-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 28px;
+    background-color: #afa7a7;
+    margin-left: 8px;
+    animation: blink .6s linear infinite alternate;
+}
 
 /* Buttons */
 .btn-grid {
@@ -64,33 +84,21 @@ h1 {
     grid-template-columns: repeat(2, auto);
     bottom: 10px;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-55%);
     margin: 10px;
 }
 
 .btn {
-    height: max-content;
-    font-family: 'Pixelify Sans', cursive;
+
     width: 100px;
-    margin: 5px;
+    margin: 15px 30px;
     border-radius: 5px;
 }
 
 .btn:hover {
-    border: 1px solid red;
-}
-
-/*Inventory*/
-#inventory {
-    width: 150px;
-    height: 90%;
-    background-color: rgba(60, 65, 68, 0.5);
-    background-color: rgba(175, 167, 167, 0.2);
-    box-shadow: 0 0 20px 1px #afa7a7;
-    right: 15px;
-    position: absolute;
-    border-radius: 5px;
-    margin: 10px;
+    border: 1px solid rgba(136, 51, 51, 0.8);
+    background-color: #171515;
+    color: #afa7a7;
 }
 
 /*Footer*/
@@ -105,6 +113,11 @@ footer {
 .copyright {
     display: inline;
     padding-left: 5%;
+    color: black;
+    font-family: sans-serif;
+}
+
+.fa-solid {
     font-size: x-large;
 }
 
@@ -116,8 +129,7 @@ footer {
     font-size: x-large;
 }
 
-.socials
-a {
+.socials a {
     color: black;
 }
 
@@ -127,4 +139,58 @@ a {
 
 .git:hover {
     color: #6e5494;
+}
+
+/* Media Queries */
+
+@media (max-width: 665px) {
+    h1 {
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: larger;
+    }
+
+    #game-text {
+        width: 80%;
+        height: 65%;
+        top: 40px;
+        align-items: center;
+    }
+
+    #inventory {
+        bottom: 2px;
+        width: 80%;
+        height: 20%;
+        align-items: center;
+    }
+
+    h1,
+    #game-text,
+    #inventory {
+        left: 50%;
+        transform: translate(-55%);
+    }
+
+    .btn {
+        font-size: large;
+    }
+}
+
+/* Keyframes - Blink effect from medium.com*/
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
