@@ -84,12 +84,14 @@ h1 {
     width: 100px;
     margin: 15px 30px;
     border-radius: 5px;
+    box-shadow: 0 0 5px 1px #000;
 }
 
 .btn:hover {
     border: 1px solid rgba(136, 51, 51, 0.8);
-    background-color: #171515;
+    background-color: #600e0e;
     color: #afa7a7;
+    box-shadow: inset 0 0 2px 1px #000;
 }
 
 /*Footer*/
