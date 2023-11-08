@@ -44,6 +44,7 @@ body {
     left: 15px;
     display: flex;
     flex-direction: column;
+    padding-top: 20px;
 }
 
 #inventory {
@@ -86,6 +87,8 @@ h1 {
     margin: 15px 30px;
     border-radius: 5px;
     box-shadow: 0 0 5px 1px #000;
+    font-family: "zen loop", sans-serif;
+    font-weight: bolder;
 }
 
 .btn:hover {
@@ -139,33 +142,39 @@ footer {
 
 @media (max-width: 665px) {
     h1 {
-        text-align: center;
         letter-spacing: 1px;
         font-size: 28px;
+        left: 50%;
+        transform: translate(-50%);
     }
 
     #game-text {
         width: 80%;
-        height: 65%;
+        height: 50%;
         top: 40px;
         align-items: center;
+        padding: 1px;
     }
 
     #inventory {
         bottom: 2px;
         width: 80%;
-        height: 20%;
+        height: 30%;
         align-items: center;
     }
 
-    h1,
     #game-text,
     #inventory {
         left: 50%;
         transform: translate(-55%);
+        box-shadow: 0 0 10px 1px #afa7a7;
+    }
+
+    .btn-grid {
+        bottom: 0;
     }
 
     .btn {
-        font-size: large;
+        margin: 0 5px;
     }
 }
