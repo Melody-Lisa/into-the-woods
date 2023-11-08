@@ -28,6 +28,10 @@ async function showTextNode(textNodeIndex) {
     const textNode = textNodes.find(textNode => textNode.id === textNodeIndex);
     textElement.innerText = '';
 
+    while (optionButtonsElement.firstChild) {
+        optionButtonsElement.removeChild(optionButtonsElement.firstChild);
+    }
+
     if (textNode.text) {
         await typeSentence(textNode.text, textElement);
     }
