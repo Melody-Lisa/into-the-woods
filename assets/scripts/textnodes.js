@@ -15,11 +15,16 @@ const textNodes = [
     },
     {
         id: 2,
-        text: "You have woken up in your car, it's night time and you had dozed off for a moment. It takes you a moment to get your bearings but you remember that your friend who had been travelling with you had left the car to relieve themself.",
+        text: `
+        You have woken up in your car, it's night time and you had dozed off for a moment. It takes you a moment 
+        to get your bearings but you remember that your friend who had been travelling with you had left the car 
+        to relieve themself.
+        `,
         options: [
             {
                 text: "Look around the car",
-                nextText: 3
+                nextText: 3,
+                setInventory: { flashlight: true }
             },
             {
                 text: "Get out to search for your friend",
@@ -37,14 +42,14 @@ const textNodes = [
         options: [
             {
                 text: "Venture to the nearby wood to search for your friend.",
-                nextText: 5
+                nextText: 5,
+                setEndCollection: { missing: true },
             },
             {
                 text: "Stay by the car to wait, hoping your friend will return.",
                 nextText: 6
             }
         ]
-        /* ADD ITEM HERE */
     },
     {
         id: 4,
@@ -67,7 +72,6 @@ const textNodes = [
         the heart of the woods. You continue to search, but the mystery of their disappearance deepens.
         `,
         end: "Unlocked Ending: Missing.",
-        /* ADD ENDING HERE */
         options: [
             {
                 text: "Start Over",
@@ -149,11 +153,13 @@ const textNodes = [
         options: [
             {
                 text: "A rusted, old key.",
-                nextText: 12
+                nextText: 12,
+                setInventory: { key: true }
             },
             {
                 text: "A weathered map with cryptic symbols.",
-                nextText: 13
+                nextText: 13,
+                setInventory: { map: true }
             }
         ]
     },
@@ -172,7 +178,8 @@ const textNodes = [
             },
             {
                 text: "Quickly get in the car and drive away from this eerie place.",
-                nextText: 15
+                nextText: 15,
+                setEndCollection: { smart: true },
             }
         ]
     },
@@ -188,7 +195,8 @@ const textNodes = [
         options: [
             {
                 text: "Keep running.",
-                nextText: 16
+                nextText: 16,
+                setEndCollection: { coward: true },
             }
         ]
     },
@@ -204,11 +212,13 @@ const textNodes = [
         options: [
             {
                 text: "Enter the underground chamber and explore its secrets.",
-                nextText: 17
+                nextText: 17,
+                setEndCollection: { disappointment: true },
             },
             {
                 text: "Choose not to enter and instead continue searching for your friend.",
-                nextText: 18
+                nextText: 18,
+                setEndCollection: { focused: true },
             }
         ]
     },
@@ -222,7 +232,6 @@ const textNodes = [
         <p>As you follow the sound of your friend's distant shouts and investigate the rustling sounds in the woods, you eventually reunite with your friend. The map remains a mysterious item, and you both decide to return to the car and leave the eerie forest behind, leaving the map's secrets for another time.
         `,
         end: "Unlocked Ending: You got a map!",
-        /* ADD ENDING HERE */
         options: [
             {
                 text: "Start Over",
@@ -249,7 +258,8 @@ const textNodes = [
             },
             {
                 text: "Quickly get in the car and drive away from this eerie place.",
-                nextText: 15
+                nextText: 15,
+                setEndCollection: { smart: true },
             }
         ]
     },
@@ -262,7 +272,6 @@ const textNodes = [
         have been lurking in those woods. It's a mystery you may never fully unravel.
         `,
         end: "Unlocked Ending: The Smartest.",
-        /* ADD ENDING HERE */
         options: [
             {
                 text: "Start Over",
@@ -281,7 +290,6 @@ const textNodes = [
         you have abandoned your friend.. And your car.
         `,
         end: "Unlocked Ending: The Coward.",
-        /* ADD ENDING HERE */
         options: [
             {
                 text: "Start Over",
@@ -308,7 +316,6 @@ const textNodes = [
         a realm beyond your understanding.
         `,
         end: "Unlocked Ending: Disappointment.",
-        /* ADD ENDING HERE */
         options: [
             {
                 text: "Start Over",
@@ -330,7 +337,6 @@ const textNodes = [
         for another time.
         `,
         end: "Unlocked Ending: Focused.",
-        /* ADD ENDING HERE */
         options: [
             {
                 text: "Start Over",
@@ -355,7 +361,8 @@ const textNodes = [
         options: [
             {
                 text: "Approach the cemetery to explore it further and uncover its secrets.",
-                nextText: 20
+                nextText: 20,
+                setInventory: { book: true }
             }
         ]
     },
@@ -371,11 +378,11 @@ const textNodes = [
         someone who had experiences in these woods.
         <p>You decide to take the mysterious book with you.
         `,
-        /* ADD ITEM HERE */
         options: [
             {
                 text: "Continue exploring the cemetery to see if you can find any more clues or items.",
-                nextText: 21
+                nextText: 21,
+                setInventory: { amulet: true }
             },
             {
                 text: "Exit the mausoleum and leave the cemetery.",
@@ -393,7 +400,6 @@ const textNodes = [
         small, ornate amulet. It feels cold to the touch and emanates an otherworldly energy.
         <p>You decide to take the amulet with you.
         `,
-        /* ADD ITEM HERE */
         options: [
             {
                 text: "Exit the mausoleum and leave the cemetery.",
@@ -419,28 +425,121 @@ const textNodes = [
             {
                 text: "Flee from the cemetery as fast as you can",
                 nextText: 24,
+                setEndCollection: { unlucky: true },
             }
         ]
     },
     {
         id: 23,
         text: `
-        As you exit the mausoleum, you and your friend are startled by an unexpected gust of wind that extinguishes 
-        your flashlights. The cemetery is now plunged into complete darkness, and an eerie silence envelops you. 
-        You begin to hear faint whispers and distant, echoing footsteps, even though you believed you were alone.
-        <p>Panicked, you fumble for your flashlight and manage to switch it back on. The beam of light reveals a 
-        group of shadowy figures standing around you. Their eyes gleam with an otherworldly, malevolent light, and 
-        their whispers grow louder.
+        As you bravely confront the shadowy figures, you demand answers, shining your flashlight upon them. 
+        They hiss and recoil from the light, revealing grotesque, otherworldly features. One of them, in a raspy 
+        voice, utters, "The amulet... give it to us."
         `,
         options: [
             {
-                text: "Attempt to confront the shadowy figures and demand answers.",
-                nextText: 23
+                text: "Refuse to give them the amulet.",
+                nextText: 25,
+                setEndCollection: { stubborn: true }
             },
             {
-                text: "Flee from the cemetery as fast as you can",
-                nextText: 24,
+                text: "Hand over the amulet.",
+                nextText: 26,
+                requiredInventory: (currentInventory) => currentInventory.amulet,
+                setEndCollection: { book: true }
+            },
+            {
+                text: "I don't have the amulet.",
+                nextText: 27,
+                requiredInventory: (currentInventory) => !currentInventory.amulet,
+                setEndCollection: { missed: true }
             }
         ]
     },
+    {
+        id: 24,
+        text: `
+        You choose to flee from the cemetery as fast as you can, leaving the mysterious book behind. 
+        The shadows continue to close in on you as you and your friend run through the dark woods. The feeling 
+        of malevolence grows stronger, and the whispers become hauntingly clear.
+        <p>Unfortunately, the woods seem to stretch endlessly, and you find yourselves running in circles. 
+        The shadowy figures catch up to you, and their intentions remain a terrifying mystery. They surround you, 
+        and with a bone-chilling howl, they engulf you in darkness.
+        `,
+        end: "Unlocked Ending: Unlucky.",
+        options: [
+            {
+                text: "Start Over",
+                nextText: 0
+            },
+            {
+                text: "Credits",
+                nextText: 98,
+            }
+        ]
+    },
+    {
+        id: 25,
+        text: `
+        You bravely confront the shadowy figures and refuse to give them the amulet. 
+        The figures hiss and become increasingly menacing. With a sudden, bone-chilling shriek, they close 
+        in on you and your friend, enveloping you in darkness.
+        `,
+        end: "Unlocked Ending: Stubborn.",
+        options: [
+            {
+                text: "Start Over",
+                nextText: 0
+            },
+            {
+                text: "Credits",
+                nextText: 98,
+            }
+        ]
+    },
+    {
+        id: 26,
+        text: `
+        You decide to hand over the amulet to the shadowy figures. As you place the amulet in their outstretched, 
+        ghostly hands, an eerie calm descends upon the cemetery. The figures slowly fade away into the darkness, 
+        taking the amulet with them.
+        <p>You and your friend are left bewildered, with more questions than answers. As the shadows recede, 
+        you hear their final whisper: "The amulet has appeased the restless spirits. Leave these woods and never 
+        return."
+        <p>With the amulet now gone and the shadowy figures dispersed, you choose to heed their warning. You and your friend 
+        quickly exit the cemetery, leaving behind the mysteries of the woods.
+        `,
+        end: "Unlocked Ending: You both got a cool book!",
+        options: [
+            {
+                text: "Start Over",
+                nextText: 0
+            },
+            {
+                text: "Credits",
+                nextText: 98,
+            }
+        ]
+    },
+    {
+        id: 27,
+        text: `
+        As you confess that you don't have the amulet, the figures react with anger. Their shadows seem to 
+        lengthen, and the air around you grows colder. In a sudden and ominous surge, the figures surround you, 
+        their whispering voices becoming more intense.
+        <p>The last thing you hear is a chilling chant echoing through the woods. Darkness envelops you, 
+        and the story ends with an unsettling sense of a fate sealed by the absence of the amulet.
+        `,
+        end: "Unlocked Ending: You missed a spot.",
+        options: [
+            {
+                text: "Start Over",
+                nextText: 0
+            },
+            {
+                text: "Credits",
+                nextText: 98,
+            }
+        ]
+    }
 ];

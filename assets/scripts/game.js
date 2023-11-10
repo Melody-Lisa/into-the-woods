@@ -3,7 +3,8 @@ const textElement = document.getElementById('text')
 const endElement = document.getElementById('ending')
 const optionButtonsElement = document.getElementById('option-buttons')
 
-let state = {}
+let inventory = {}
+let endCollection = {}
 
 function startGame() {
     state = {}
@@ -39,7 +40,7 @@ function showTextNode(textNodeIndex) {
 }
 
 function showOption(option) {
-    return option.requiredState == null || option.requiredState(state)
+    return option.requiredInventory == null || option.requiredInventory(inventory)
 }
 
 function selectOption(option) {
@@ -47,7 +48,7 @@ function selectOption(option) {
     if (nextTextNodeId <= 0) {
         return startGame()
     }
-    state = Object.assign(state, option.setState)
+    state = Object.assign(inventory, option.setInventory)
     showTextNode(nextTextNodeId)
 }
 
