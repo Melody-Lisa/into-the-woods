@@ -253,4 +253,194 @@ const textNodes = [
             }
         ]
     },
+    {
+        id: 15,
+        text: `
+        You decide it's best to leave the eerie woods behind and get in the car with your friend. 
+        As you drive away, the unsettling atmosphere gradually fades, and the night grows quieter.
+        <p>You and your friend discuss the strange events you both experienced, wondering what could 
+        have been lurking in those woods. It's a mystery you may never fully unravel.
+        `,
+        end: "Unlocked Ending: The Smartest.",
+        /* ADD ENDING HERE */
+        options: [
+            {
+                text: "Start Over",
+                nextText: 0
+            },
+            {
+                text: "Credits",
+                nextText: 98,
+            }
+        ]
+    },
+    {
+        id: 16,
+        text: `
+        Eventually you make it through the woods and into a nearby town. You appear to be safe for now but 
+        you have abandoned your friend.. And your car.
+        `,
+        end: "Unlocked Ending: The Coward.",
+        /* ADD ENDING HERE */
+        options: [
+            {
+                text: "Start Over",
+                nextText: 0
+            },
+            {
+                text: "Credits",
+                nextText: 98,
+            }
+        ]
+    },
+    {
+        id: 17,
+        text: `
+        You decide to enter the underground chamber, guided by curiosity and a sense of adventure. 
+        As you step into the dark, hidden chamber, the door creaks shut behind you, sealing you inside.
+        <p>The chamber is filled with ancient artifacts and strange symbols etched on the walls. 
+        You explore further, discovering an ornate chest at the center of the chamber. As you open it, 
+        you find a collection of valuable and mystical items, but the room is filled with an eerie presence that 
+        grows stronger by the moment.
+        <p>Suddenly, you hear a faint whispering that seems to come from all around you. It's as if the 
+        chamber itself is alive, and it's demanding something in return for the treasures you've discovered. 
+        The situation becomes increasingly unsettling, and you can't shake the feeling that you've stumbled into 
+        a realm beyond your understanding.
+        `,
+        end: "Unlocked Ending: Disappointment.",
+        /* ADD ENDING HERE */
+        options: [
+            {
+                text: "Start Over",
+                nextText: 0
+            },
+            {
+                text: "Credits",
+                nextText: 98,
+            }
+        ]
+    },
+    {
+        id: 18,
+        text: `
+        You decide to hold off on entering the underground chamber and continue searching for your friend. 
+        Following the sound of their distant shouts, you eventually reunite with your friend, who is relieved to 
+        see you.
+        <p>You both decide to leave the eerie woods together, leaving the mysteries of the underground chamber 
+        for another time.
+        `,
+        end: "Unlocked Ending: Focused.",
+        /* ADD ENDING HERE */
+        options: [
+            {
+                text: "Start Over",
+                nextText: 0
+            },
+            {
+                text: "Credits",
+                nextText: 98,
+            }
+        ]
+    },
+    {
+        id: 19,
+        text: `
+        You decide to investigate the source of the strange occurrences in the woods together with your friend. 
+        Armed with flashlights, you cautiously venture into the darkness, following the rustling sounds and eerie 
+        sensations.
+        <p>As you delve deeper into the woods, you come across a clearing, and there, illuminated by the moonlight, 
+        you discover an ancient, overgrown cemetery. The tombstones are weathered and moss-covered, and the air 
+        feels heavy with an otherworldly presence.
+        `,
+        options: [
+            {
+                text: "Approach the cemetery to explore it further and uncover its secrets.",
+                nextText: 20
+            }
+        ]
+    },
+    {
+        id: 20,
+        text: `
+        You and your friend decide to approach the eerie cemetery to explore it further. The moonlight casts an 
+        eerie glow on the tombstones, creating an atmosphere of mystery. As you move deeper into the cemetery, 
+        you notice a mausoleum that stands out from the rest. Its doors are slightly ajar, revealing a dimly lit 
+        interior.
+        <p>You cautiously enter the mausoleum, and inside, you discover an old, dusty book. The pages are filled 
+        with cryptic symbols and writings in a language you can't quite identify. It appears to be a journal of 
+        someone who had experiences in these woods.
+        <p>You decide to take the mysterious book with you.
+        `,
+        /* ADD ITEM HERE */
+        options: [
+            {
+                text: "Continue exploring the cemetery to see if you can find any more clues or items.",
+                nextText: 21
+            },
+            {
+                text: "Exit the mausoleum and leave the cemetery.",
+                nextText: 22,
+            }
+        ]
+    },
+    {
+        id: 21,
+        text: `
+        You decide to continue exploring the cemetery to see if you can find any more clues or items. 
+        As you search the area, you come across a small, weathered gravestone with a strange symbol etched onto it. 
+        The symbol looks ancient and unfamiliar, but it piques your curiosity.
+        <p>Upon closer inspection, you notice a small, hidden compartment in the gravestone. Inside, you find a 
+        small, ornate amulet. It feels cold to the touch and emanates an otherworldly energy.
+        <p>You decide to take the amulet with you.
+        `,
+        /* ADD ITEM HERE */
+        options: [
+            {
+                text: "Exit the mausoleum and leave the cemetery.",
+                nextText: 22,
+            }
+        ]
+    },
+    {
+        id: 22,
+        text: `
+        As you exit the mausoleum, you and your friend are startled by an unexpected gust of wind that extinguishes 
+        your flashlights. The cemetery is now plunged into complete darkness, and an eerie silence envelops you. 
+        You begin to hear faint whispers and distant, echoing footsteps, even though you believed you were alone.
+        <p>Panicked, you fumble for your flashlight and manage to switch it back on. The beam of light reveals a 
+        group of shadowy figures standing around you. Their eyes gleam with an otherworldly, malevolent light, and 
+        their whispers grow louder.
+        `,
+        options: [
+            {
+                text: "Attempt to confront the shadowy figures and demand answers.",
+                nextText: 23
+            },
+            {
+                text: "Flee from the cemetery as fast as you can",
+                nextText: 24,
+            }
+        ]
+    },
+    {
+        id: 23,
+        text: `
+        As you exit the mausoleum, you and your friend are startled by an unexpected gust of wind that extinguishes 
+        your flashlights. The cemetery is now plunged into complete darkness, and an eerie silence envelops you. 
+        You begin to hear faint whispers and distant, echoing footsteps, even though you believed you were alone.
+        <p>Panicked, you fumble for your flashlight and manage to switch it back on. The beam of light reveals a 
+        group of shadowy figures standing around you. Their eyes gleam with an otherworldly, malevolent light, and 
+        their whispers grow louder.
+        `,
+        options: [
+            {
+                text: "Attempt to confront the shadowy figures and demand answers.",
+                nextText: 23
+            },
+            {
+                text: "Flee from the cemetery as fast as you can",
+                nextText: 24,
+            }
+        ]
+    },
 ];
