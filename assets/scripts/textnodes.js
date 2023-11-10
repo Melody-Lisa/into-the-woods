@@ -67,6 +67,7 @@ const textNodes = [
         the heart of the woods. You continue to search, but the mystery of their disappearance deepens.
         `,
         end: "Unlocked Ending: Missing.",
+        /* ADD ENDING HERE */
         options: [
             {
                 text: "Start Over",
@@ -161,7 +162,8 @@ const textNodes = [
         text: `
         You choose to keep honking the horn, hoping that the noise will deter whatever is coming closer. 
         The horn's blaring continues, echoing through the night, and you anxiously wait for your friend to return.
-        <p>Suddenly, a figure emerges from the darkness. It's your friend, disheveled and frightened, stumbling towards the car. You breathe a sigh of relief as they reach the vehicle.
+        <p>Suddenly, a figure emerges from the darkness. It's your friend, disheveled and frightened, 
+        stumbling towards the car. You breathe a sigh of relief as they reach the vehicle.
         `,
         options: [
             {
@@ -220,6 +222,7 @@ const textNodes = [
         <p>As you follow the sound of your friend's distant shouts and investigate the rustling sounds in the woods, you eventually reunite with your friend. The map remains a mysterious item, and you both decide to return to the car and leave the eerie forest behind, leaving the map's secrets for another time.
         `,
         end: "Unlocked Ending: You got a map!",
+        /* ADD ENDING HERE */
         options: [
             {
                 text: "Start Over",
@@ -228,6 +231,25 @@ const textNodes = [
             {
                 text: "Credits",
                 nextText: 98,
+            }
+        ]
+    },
+    {
+        id: 14,
+        text: `
+        Relieved to have your friend back, you ask them what happened and what they saw in the woods. 
+        They explain that they got lost and disoriented while looking for a suitable spot, and they 
+        heard strange sounds and glimpsed unsettling shadows. It seems like something unnatural might be 
+        in these woods.
+        `,
+        options: [
+            {
+                text: "Decide to investigate the source of these strange occurrences in the woods together.",
+                nextText: 19
+            },
+            {
+                text: "Quickly get in the car and drive away from this eerie place.",
+                nextText: 15
             }
         ]
     },
