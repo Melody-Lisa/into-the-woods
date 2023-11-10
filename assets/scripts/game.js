@@ -9,31 +9,16 @@ function startGame() {
     showTextNode(1)
 }
 
-/* Typing effect from medium.com - I asked chatgpt to convert into vanilla js */
-async function typeSentence(sentence, eleRef, delay = 50) {
-    const letters = sentence.split("");
-    let i = 0;
-    while (i < letters.length) {
-        await waitForMs(delay);
-        eleRef.innerHTML += letters[i];
-        i++;
-    }
-}
-
-function waitForMs(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-async function showTextNode(textNodeIndex) {
+function showTextNode(textNodeIndex) {
     const textNode = textNodes.find(textNode => textNode.id === textNodeIndex);
-    textElement.innerHTML = '';  // Change innerText to innerHTML
+    textElement.innerHTML = '';
 
     while (optionButtonsElement.firstChild) {
         optionButtonsElement.removeChild(optionButtonsElement.firstChild);
     }
 
     if (textNode.text) {
-        textElement.innerHTML = textNode.text;  // Set innerHTML directly
+        textElement.innerHTML = textNode.text;
     }
 
     while (optionButtonsElement.firstChild) {
@@ -65,3 +50,21 @@ function selectOption(option) {
 }
 
 startGame()
+
+/* Typing function just in case
+/* Typing effect from medium.com - I asked chatgpt to convert into vanilla js
+async function typeSentence(sentence, eleRef, delay = 50) {
+    const letters = sentence.split("");
+    let i = 0;
+    while (i < letters.length) {
+        await waitForMs(delay);
+        eleRef.innerHTML += letters[i];
+        i++;
+    }
+}
+
+function waitForMs(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async */
