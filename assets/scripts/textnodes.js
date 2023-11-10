@@ -57,13 +57,12 @@ const textNodes = [
         
         <p>Despite your efforts, your friend's voice remains distant and elusive. It's as if they've vanished into 
         the heart of the woods. You continue to search, but the mystery of their disappearance deepens.
-        
-       <p> Unlocked Ending: Missing.
         `,
+        end: "Unlocked Ending: Missing.",
         options: [
             {
-                text: "Look around the car",
-                nextText: 3
+                text: "Start Over",
+                nextText: 0
             }
         ]
     },

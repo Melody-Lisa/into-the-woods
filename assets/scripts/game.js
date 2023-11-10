@@ -1,5 +1,6 @@
 /* I followed a walkthrough by web dev simplified for the basic structure for the game */
 const textElement = document.getElementById('text')
+const endElement = document.getElementById('ending')
 const optionButtonsElement = document.getElementById('option-buttons')
 
 let state = {}
@@ -12,6 +13,7 @@ function startGame() {
 function showTextNode(textNodeIndex) {
     const textNode = textNodes.find(textNode => textNode.id === textNodeIndex);
     textElement.innerHTML = '';
+    endElement.innerHTML = '';
 
     while (optionButtonsElement.firstChild) {
         optionButtonsElement.removeChild(optionButtonsElement.firstChild);
@@ -21,8 +23,8 @@ function showTextNode(textNodeIndex) {
         textElement.innerHTML = textNode.text;
     }
 
-    while (optionButtonsElement.firstChild) {
-        optionButtonsElement.removeChild(optionButtonsElement.firstChild)
+    if (textNode.end) {
+        endElement.innerHTML = textNode.end;
     }
 
     textNode.options.forEach(option => {
