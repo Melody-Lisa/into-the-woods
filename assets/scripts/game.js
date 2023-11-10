@@ -15,7 +15,7 @@ async function typeSentence(sentence, eleRef, delay = 50) {
     let i = 0;
     while (i < letters.length) {
         await waitForMs(delay);
-        eleRef.textContent += letters[i];
+        eleRef.innerHTML += letters[i];
         i++;
     }
 }
@@ -26,14 +26,14 @@ function waitForMs(ms) {
 
 async function showTextNode(textNodeIndex) {
     const textNode = textNodes.find(textNode => textNode.id === textNodeIndex);
-    textElement.innerText = '';
+    textElement.innerHTML = '';  // Change innerText to innerHTML
 
     while (optionButtonsElement.firstChild) {
         optionButtonsElement.removeChild(optionButtonsElement.firstChild);
     }
 
     if (textNode.text) {
-        await typeSentence(textNode.text, textElement);
+        textElement.innerHTML = textNode.text;  // Set innerHTML directly
     }
 
     while (optionButtonsElement.firstChild) {
