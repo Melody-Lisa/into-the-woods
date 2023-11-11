@@ -11,6 +11,10 @@ function startGame() {
     showTextNode(1)
 }
 
+function getCumulativeHeight(element) {
+    return element.scrollHeight;
+}
+
 function showTextNode(textNodeIndex) {
     const textNode = textNodes.find(textNode => textNode.id === textNodeIndex);
     textElement.innerHTML = '';
@@ -22,6 +26,9 @@ function showTextNode(textNodeIndex) {
 
     if (textNode.text) {
         textElement.innerHTML = textNode.text;
+
+        const cumulativeHeight = getCumulativeHeight(textElement, endElement);
+        optionButtonsElement.style.top = `max(${cumulativeHeight + 10}px, 10px)`;
     }
 
     if (textNode.end) {
