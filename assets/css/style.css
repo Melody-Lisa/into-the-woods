@@ -27,10 +27,16 @@ body {
     width: 70%;
     left: 15px;
     text-align: center;
-    overflow-y: scroll;
+    justify-content: space-between;
     flex-direction: column;
+    display: flex;
 }
 
+
+#text {
+    padding: 30px 15px;
+    overflow-y: scroll;
+}
 
 #inventory {
     width: 20%;
@@ -60,21 +66,13 @@ h1 {
     color: black;
 }
 
-#text {
-    padding: 30px 15px;
-}
-
 /* Buttons */
 .btn-grid {
-    position: absolute;
-    display: flex;
+    display: grid;
     height: max-content;
-    justify-content: center;
     grid-template-columns: repeat(2, auto);
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-    padding: 10px; /* Add some padding if needed */
+    padding: 10px;
+    margin: 0 auto;
 }
 
 .btn {
@@ -84,7 +82,7 @@ h1 {
     font-family: "zen loop", sans-serif;
     font-weight: bolder;
     padding: 2px;
-    margin: 50px 15px;
+    margin: 0 50px;
 }
 
 
