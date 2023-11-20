@@ -541,5 +541,39 @@ const textNodes = [
                 nextText: 98,
             }
         ]
-    }
+    },
+    {
+        id: 98,
+        text: `
+        <h2>Credits</h2>
+        <p>Thank you for playing! This game demo was created by <a href="https://github.com/Melody-Lisa">Melody Lisa</a> 
+        as project milestone 2 for Code Institute's Full Stack Software Development course.</p>
+        <p>Special thanks to my mentor, cohort facilitator and fellow students for their continuous support</p>
+        <p>Your ending has been recorded in the extra features section, why not check it out and start over to see if you can 
+        collect them all?</p>
+        `,
+        options: [
+            {
+                text: "Start Over",
+                nextText: 0
+            }
+        ]
+    },
+    {
+        id: 99,
+        text: `<h2>About</h2>
+        <p>You're on a road trip with your dear friend. It's getting pretty late, you should really find somewhere to rest,
+        but you seem to be in the middle of nowhere. A quick pit stop by the side of the woods
+         is in order.</p>
+        <p> Choose your path through the story to see what happens next. Don't worry if you 
+        don't get the ending you want, your ending will be recorded ready for you to start over and 
+        choose a different path.</p>
+        `,
+        options: [
+            {
+                text: "Start Over",
+                nextText: 0
+            },
+        ]
+    },
 ];
