@@ -31,7 +31,6 @@ const textNodes = [
                 nextText: 4
             }
         ],
-        backgroundImage: "url('')"
     },
     {
         id: 3,
