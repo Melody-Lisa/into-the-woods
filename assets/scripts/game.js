@@ -20,6 +20,13 @@ function showTextNode(textNodeIndex) {
     textElement.innerHTML = '';
     endElement.innerHTML = '';
 
+    if (textNode.backgroundImage) {
+        backgroundImage = `url('${textNode.backgroundImage}')`;
+    } else {
+        backgroundImage = 'none';
+    }
+    document.getElementById('game-text').style.backgroundImage = backgroundImage;
+
     while (optionButtonsElement.firstChild) {
         optionButtonsElement.removeChild(optionButtonsElement.firstChild);
     }

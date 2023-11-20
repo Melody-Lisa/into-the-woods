@@ -30,7 +30,8 @@ const textNodes = [
                 text: "Get out to search for your friend",
                 nextText: 4
             }
-        ]
+        ],
+        backgroundImage: "url('')"
     },
     {
         id: 3,
@@ -548,7 +549,7 @@ const textNodes = [
         <h2>Credits</h2>
         <p>Thank you for playing! This game demo was created by <a href="https://github.com/Melody-Lisa">Melody Lisa</a> 
         as project milestone 2 for Code Institute's Full Stack Software Development course.</p>
-        <p>Special thanks to my mentor, cohort facilitator and fellow students for their continuous support</p>
+        <p>Special thanks to my mentor, cohort facilitator and fellow students for their continuous support.</p>
         <p>Your ending has been recorded in the extra features section, why not check it out and start over to see if you can 
         collect them all?</p>
         `,
