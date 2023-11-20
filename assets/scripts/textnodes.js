@@ -571,7 +571,7 @@ const textNodes = [
         `,
         options: [
             {
-                text: "Start Over",
+                text: "Back",
                 nextText: 0
             },
         ]
