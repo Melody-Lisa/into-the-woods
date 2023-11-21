@@ -141,13 +141,13 @@ footer {
 @media (max-width: 992px) {
 
     #grid {
-        display: block;
+        display: flex;
+        justify-content: center;
     }
 
     #game-text {
         position: fixed;
         height: 50%;
-        top: 100px;
         align-items: center;
     }
 
@@ -160,15 +160,19 @@ footer {
 
     #game-text,
     #inventory {
-        left: 50%;
         width: 90%;
-        transform: translate(-52%);
         box-shadow: 0 0 10px 1px #000000;
         padding: 1px;
+        margin-bottom: revert;
+    }
+
+    #text {
+        padding: 10px 10px;
     }
 
     .btn-grid {
         margin-bottom: 10px;
+        justify-content: center;
     }
 
     .btn {

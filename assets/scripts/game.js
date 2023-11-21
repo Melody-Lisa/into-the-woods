@@ -1,11 +1,14 @@
 /* I followed a walkthrough by web dev simplified for the basic structure for the game */
 const textElement = document.getElementById('text')
 const endElement = document.getElementById('ending')
+const inventoryElement = document.getElementById('inventory-items')
+const achievementElement = document.getElementById('achievements')
 const optionButtonsElement = document.getElementById('option-buttons')
 
 let inventory = {}
 let endCollection = {}
 
+/* Start's the game */
 function startGame() {
     state = {}
     showTextNode(1)
@@ -15,6 +18,7 @@ function getCumulativeHeight(element) {
     return element.scrollHeight;
 }
 
+/* Function for showing the text in the game container */
 function showTextNode(textNodeIndex) {
     const textNode = textNodes.find(textNode => textNode.id === textNodeIndex);
     textElement.innerHTML = '';
@@ -46,10 +50,12 @@ function showTextNode(textNodeIndex) {
     })
 }
 
+/* Function to show certain options based on the items you have in your inventory */
 function showOption(option) {
     return option.requiredInventory == null || option.requiredInventory(inventory)
 }
 
+/* Function to select options */
 function selectOption(option) {
     const nextTextNodeId = option.nextText
     if (nextTextNodeId <= 0) {
