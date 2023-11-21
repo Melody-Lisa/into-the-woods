@@ -136,15 +136,21 @@ footer {
 }
 
 /* Media Queries */
-@media (max-width: 665px) {
+@media (max-width: 992px) {
+
+    #grid {
+        display: block;
+    }
 
     #game-text {
+        position: fixed;
         height: 50%;
-        top: 40px;
+        top: 100px;
         align-items: center;
     }
 
     #inventory {
+        position: fixed;
         bottom: 40px;
         height: 30%;
         align-items: center;
@@ -160,7 +166,7 @@ footer {
     }
 
     .btn-grid {
-        bottom: 0;
+        bottom: 5px;
     }
 
     .btn {
