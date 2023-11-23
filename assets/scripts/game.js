@@ -49,9 +49,8 @@ function showTextNode(textNodeIndex) {
     }
 
     /* Show achievements within the side container */
-    if (textNode.achieved) {
+    if (textNode.achieved && !achievementElement.innerHTML.includes(textNode.achieved)) {
         achievementElement.innerHTML += textNode.achieved;
-
     }
 
     /* Show option buttons */
