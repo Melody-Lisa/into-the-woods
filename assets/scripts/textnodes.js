@@ -24,7 +24,6 @@ const textNodes = [
             {
                 text: "Look around the car",
                 nextText: 3,
-                setInventory: { flashlight: true }
             },
             {
                 text: "Get out to search for your friend",
@@ -39,6 +38,7 @@ const textNodes = [
         The night is eerily quiet, and the dense woods surrounding you seem to absorb any sound you make. 
         You shine the flashlight in the direction your friend went, but there's no response.
         `,
+        inventory: `<li>Flashlight</li`,
         options: [
             {
                 text: "Venture to the nearby wood to search for your friend.",
@@ -209,6 +209,7 @@ const textNodes = [
         <p>With a sense of curiosity and trepidation, you decide to try the key in the door's lock. 
         To your surprise, it fits perfectly, and the door creaks open to reveal a hidden, underground chamber.
         `,
+        inventory: `<li>Key</li>`,
         options: [
             {
                 text: "Enter the underground chamber and explore its secrets.",
@@ -231,6 +232,7 @@ const textNodes = [
         <p>With the map in hand, you decide to continue searching for your friend, hoping that the cryptic symbols might hold a clue to their whereabouts.
         <p>As you follow the sound of your friend's distant shouts and investigate the rustling sounds in the woods, you eventually reunite with your friend. The map remains a mysterious item, and you both decide to return to the car and leave the eerie forest behind, leaving the map's secrets for another time.
         `,
+        inventory: `<li>Map</li>`,
         end: "Unlocked Ending: You got a map!",
         options: [
             {
@@ -362,7 +364,6 @@ const textNodes = [
             {
                 text: "Approach the cemetery to explore it further and uncover its secrets.",
                 nextText: 20,
-                setInventory: { book: true }
             }
         ]
     },
@@ -378,6 +379,7 @@ const textNodes = [
         someone who had experiences in these woods.
         <p>You decide to take the mysterious book with you.
         `,
+        inventory: `<li>Book</li>`,
         options: [
             {
                 text: "Continue exploring the cemetery to see if you can find any more clues or items.",
@@ -400,6 +402,7 @@ const textNodes = [
         small, ornate amulet. It feels cold to the touch and emanates an otherworldly energy.
         <p>You decide to take the amulet with you.
         `,
+        inventory: `<li>Amulet</li>`,
         options: [
             {
                 text: "Exit the mausoleum and leave the cemetery.",

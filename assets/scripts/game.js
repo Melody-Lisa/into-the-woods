@@ -8,9 +8,11 @@ const optionButtonsElement = document.getElementById('option-buttons')
 let inventory = {}
 let endCollection = {}
 
+
 /* Start's the game */
 function startGame() {
-    state = {}
+    inventory = {}
+    inventoryElement.innerHTML = ''
     showTextNode(1)
 }
 
@@ -35,8 +37,15 @@ function showTextNode(textNodeIndex) {
         optionButtonsElement.style.top = `max(${cumulativeHeight + 10}px, 10px)`;
     }
 
+    /* Show ending text within the game container */
     if (textNode.end) {
         endElement.innerHTML = textNode.end;
+    }
+
+    /* Show inventory items within the side container */
+    if (textNode.inventory) {
+        inventoryElement.innerHTML += textNode.inventory;
+
     }
 
     textNode.options.forEach(option => {
