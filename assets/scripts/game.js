@@ -48,6 +48,13 @@ function showTextNode(textNodeIndex) {
 
     }
 
+    /* Show achievements within the side container */
+    if (textNode.achieved) {
+        achievementElement.innerHTML += textNode.achieved;
+
+    }
+
+    /* Show option buttons */
     textNode.options.forEach(option => {
         if (showOption(option)) {
             const button = document.createElement('button')

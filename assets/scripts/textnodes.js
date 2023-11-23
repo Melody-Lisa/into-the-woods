@@ -38,12 +38,11 @@ const textNodes = [
         The night is eerily quiet, and the dense woods surrounding you seem to absorb any sound you make. 
         You shine the flashlight in the direction your friend went, but there's no response.
         `,
-        inventory: `<li>Flashlight</li`,
+        inventory: `<li>Flashlight</li>`,
         options: [
             {
                 text: "Venture to the nearby wood to search for your friend.",
-                nextText: 5,
-                setEndCollection: { missing: true },
+                nextText: 5
             },
             {
                 text: "Stay by the car to wait, hoping your friend will return.",
@@ -72,6 +71,7 @@ const textNodes = [
         the heart of the woods. You continue to search, but the mystery of their disappearance deepens.
         `,
         end: "Unlocked Ending: Missing.",
+        achieved: `<li>Missing</li>`,
         options: [
             {
                 text: "Start Over",
@@ -178,8 +178,7 @@ const textNodes = [
             },
             {
                 text: "Quickly get in the car and drive away from this eerie place.",
-                nextText: 15,
-                setEndCollection: { smart: true },
+                nextText: 15
             }
         ]
     },
@@ -195,8 +194,7 @@ const textNodes = [
         options: [
             {
                 text: "Keep running.",
-                nextText: 16,
-                setEndCollection: { coward: true },
+                nextText: 16
             }
         ]
     },
@@ -213,13 +211,11 @@ const textNodes = [
         options: [
             {
                 text: "Enter the underground chamber and explore its secrets.",
-                nextText: 17,
-                setEndCollection: { disappointment: true },
+                nextText: 17
             },
             {
                 text: "Choose not to enter and instead continue searching for your friend.",
-                nextText: 18,
-                setEndCollection: { focused: true },
+                nextText: 18
             }
         ]
     },
@@ -234,6 +230,7 @@ const textNodes = [
         `,
         inventory: `<li>Map</li>`,
         end: "Unlocked Ending: You got a map!",
+        achieved: `<li>You got a map!</li>`,
         options: [
             {
                 text: "Start Over",
@@ -274,6 +271,7 @@ const textNodes = [
         have been lurking in those woods. It's a mystery you may never fully unravel.
         `,
         end: "Unlocked Ending: The Smartest.",
+        achieved: `<li>The Smartest</li>`,
         options: [
             {
                 text: "Start Over",
@@ -292,6 +290,7 @@ const textNodes = [
         you have abandoned your friend.. And your car.
         `,
         end: "Unlocked Ending: The Coward.",
+        achieved: `<li>The Coward</li>`,
         options: [
             {
                 text: "Start Over",
@@ -318,6 +317,7 @@ const textNodes = [
         a realm beyond your understanding.
         `,
         end: "Unlocked Ending: Disappointment.",
+        achieved: `<li>Disappointment</li>`,
         options: [
             {
                 text: "Start Over",
@@ -339,6 +339,7 @@ const textNodes = [
         for another time.
         `,
         end: "Unlocked Ending: Focused.",
+        achieved: `<li>Focused</li>`,
         options: [
             {
                 text: "Start Over",
@@ -427,8 +428,7 @@ const textNodes = [
             },
             {
                 text: "Flee from the cemetery as fast as you can",
-                nextText: 24,
-                setEndCollection: { unlucky: true },
+                nextText: 24
             }
         ]
     },
@@ -442,8 +442,7 @@ const textNodes = [
         options: [
             {
                 text: "Refuse to give them the amulet.",
-                nextText: 25,
-                setEndCollection: { stubborn: true }
+                nextText: 25
             },
             {
                 text: "Hand over the amulet.",
@@ -454,8 +453,7 @@ const textNodes = [
             {
                 text: "I don't have the amulet.",
                 nextText: 27,
-                requiredInventory: (currentInventory) => !currentInventory.amulet,
-                setEndCollection: { missed: true }
+                requiredInventory: (currentInventory) => !currentInventory.amulet
             }
         ]
     },
@@ -470,6 +468,7 @@ const textNodes = [
         and with a bone-chilling howl, they engulf you in darkness.
         `,
         end: "Unlocked Ending: Unlucky.",
+        achieved: `<li>Unlucky</li>`,
         options: [
             {
                 text: "Start Over",
@@ -489,6 +488,7 @@ const textNodes = [
         in on you and your friend, enveloping you in darkness.
         `,
         end: "Unlocked Ending: Stubborn.",
+        achieved: `<li>Stubborn</li>`,
         options: [
             {
                 text: "Start Over",
@@ -513,6 +513,7 @@ const textNodes = [
         quickly exit the cemetery, leaving behind the mysteries of the woods.
         `,
         end: "Unlocked Ending: You both got a cool book!",
+        achieved: `<li>A cool book!</li>`,
         options: [
             {
                 text: "Start Over",
@@ -534,6 +535,7 @@ const textNodes = [
         and the story ends with an unsettling sense of a fate sealed by the absence of the amulet.
         `,
         end: "Unlocked Ending: You missed a spot.",
+        achieved: `<li>You missed a spot.</li>`,
         options: [
             {
                 text: "Start Over",
