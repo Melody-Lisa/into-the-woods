@@ -1,6 +1,7 @@
 body {
     background-image: url(../images/parchment-background.jpg);
     height: 100vh;
+    width: 100vw;
     overflow: hidden;
     font-family: 'Pixelify Sans', cursive;
     color: #afa7a7;
@@ -11,17 +12,13 @@ body {
 #grid {
     display: grid;
     grid-template-columns: 1fr 400px;
-    width: 100%;
-    height: 95%;
-}
+    width: 90%;
+    height: 75%;
 
-#game-text,
-#inventory {
     border-radius: 5px;
-    margin: 15px;
+    margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.8);
     box-shadow: 0 0 20px 1px #000000;
-    height: 75%;
     padding: 20px 5px;
 }
 
@@ -58,7 +55,7 @@ h1 {
 }
 
 h2 {
-    margin: 0;
+    margin: 0px 10px;
     padding: 0;
 }
 
@@ -67,8 +64,17 @@ h2 {
     overflow-y: scroll;
 }
 
+hr {
+    border: 1px solid #afa7a7;
+    margin: 10px 0;
+    width: 90%;
+    ;
+
+}
+
 /* Buttons */
-.btn-grid {
+.btn-grid,
+.second-grid {
     display: grid;
     height: max-content;
     grid-template-columns: repeat(2, auto);
@@ -86,10 +92,6 @@ h2 {
     font-weight: bolder;
     padding: 2px;
     margin: 0 50px;
-}
-
-.btn2 {
-    margin: 0 auto;
 }
 
 .btn:hover {
@@ -148,22 +150,25 @@ footer {
     #game-text {
         position: fixed;
         height: 48vh;
-        align-items: center;
     }
 
     #inventory {
         position: fixed;
         bottom: 50px;
-        height: 30vh;
-        align-items: center;
+        height: 40vh;
     }
 
     #game-text,
     #inventory {
         width: 90%;
-        box-shadow: 0 0 10px 1px #000000;
         padding: 1px;
         margin-bottom: revert;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin: 5px;
     }
 
     #text {
@@ -184,10 +189,14 @@ footer {
 
     h1 {
         font-size: 1.5rem;
-        }
+    }
 
-        .btn {
-            width: 100px;
-        }
+    h2 {
+        font-size: 1rem;
+    }
+
+    .btn {
+        width: 100px;
+    }
 
 }
