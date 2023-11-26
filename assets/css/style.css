@@ -89,6 +89,7 @@ hr {
     color: #afa7a7;
     box-shadow: 0 0 5px 1px #000;
     font-family: "zen loop", sans-serif;
+    font-size: 1rem;
     font-weight: bolder;
     padding: 2px;
     margin: 0 50px;
@@ -143,19 +144,22 @@ footer {
 @media screen and (max-width: 992px) {
 
     #grid {
+        position: fixed;
+        bottom: 50px;
         display: flex;
         justify-content: center;
+        height: 85%;
     }
 
     #game-text {
         position: fixed;
-        height: 48vh;
+        height: 50vh;
     }
 
     #inventory {
         position: fixed;
         bottom: 50px;
-        height: 40vh;
+        height: 35vh;
     }
 
     #game-text,
@@ -193,6 +197,15 @@ footer {
 
     h2 {
         font-size: 1rem;
+    }
+
+    #grid {
+        height: 80%;
+    }
+
+    .btn-grid,
+    .second-grid {
+        padding: 1px;
     }
 
     .btn {
