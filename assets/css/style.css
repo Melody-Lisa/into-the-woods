@@ -26,6 +26,8 @@ body {
 .modal-content {
     background-color: rgba(0, 0, 0, 0.8);
     color: #afa7a7;
+    border-radius: 5px;
+    border: 1px solid #600e0e;
 }
 
 /*..........................................Container*/
