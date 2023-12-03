@@ -2,7 +2,7 @@
 const textElement = document.getElementById('text')
 const endElement = document.getElementById('ending')
 const inventoryElement = document.getElementById('inventory-items')
-const achievementElement = document.getElementById('achievements')
+const achievementElement = document.getElementById('achievements-text')
 const optionButtonsElement = document.getElementById('option-buttons')
 
 let inventory = {}
