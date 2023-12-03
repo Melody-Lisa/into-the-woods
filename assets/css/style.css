@@ -41,7 +41,7 @@ body {
     flex-direction: column;
     display: flex;
     height: 100%;
-    padding: 10% 0;
+    padding-top: 15px;
 }
 
 ::-webkit-scrollbar {

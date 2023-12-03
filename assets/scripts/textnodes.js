@@ -554,7 +554,7 @@ const textNodes = [
         <p>Thank you for playing! This game demo was created by <a href="https://github.com/Melody-Lisa">Melody Lisa</a> 
         as project milestone 2 for Code Institute's Full Stack Software Development course.</p>
         <p>Special thanks to my mentor, cohort facilitator and fellow students for their continuous support.</p>
-        <p>Your ending has been recorded in the extra features section, why not check it out and start over to see if you can 
+        <p>Your ending has been recorded in the achievements tab above, why not check it out and start over to see if you can 
         collect them all?</p>
         `,
         options: [
