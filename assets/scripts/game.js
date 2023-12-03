@@ -12,7 +12,6 @@ let endCollection = {}
 document.getElementById("off").style.display = "block";
 document.getElementById("on").style.display = "none";
 
-
 /* Start's the game */
 function startGame() {
     inventory = {}
@@ -103,21 +102,3 @@ document.getElementById("audio-btn").addEventListener("click", function () {
 });
 
 startGame()
-
-/* Typing function just in case
-/* Typing effect from medium.com - I asked chatgpt to convert into vanilla js
-async function typeSentence(sentence, eleRef, delay = 50) {
-    const letters = sentence.split("");
-    let i = 0;
-    while (i < letters.length) {
-        await waitForMs(delay);
-        eleRef.innerHTML += letters[i];
-        i++;
-    }
-}
-
-function waitForMs(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-async */
