@@ -7,19 +7,34 @@ body {
     color: #afa7a7;
 }
 
-/* Containers */
-
-#grid {
-    display: grid;
-    grid-template-columns: 1fr 400px;
-    width: 90%;
-    height: 75%;
-
-    border-radius: 5px;
-    margin: 0 auto;
+/*...........................................Navbar*/
+#offcanvasDarkNavbar {
     background-color: rgba(0, 0, 0, 0.8);
-    box-shadow: 0 0 20px 1px #000000;
-    padding: 20px 5px;
+}
+
+#offcanvasDarkNavbar,
+.btn-close-white,
+.nav-item a {
+    color: inherit;
+}
+
+.nav-item a:hover {
+    color: #600e0e;
+}
+
+/*..........................................Modal*/
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #afa7a7;
+}
+
+/*..........................................Container*/
+#grid {
+    height: 82vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0 0 10px 1px #000000;
 }
 
 #game-text {
@@ -46,32 +61,23 @@ body {
     box-shadow: inset 0 0 2px 1px #000;
 }
 
-/* Content */
+
+/*.........................................Content*/
 h1 {
-    text-align: center;
-    letter-spacing: 2px;
-    margin: 10px;
     color: black;
 }
 
-h2 {
-    margin: 0px 10px;
-    padding: 0;
+h5 {
+    text-align: center;
 }
 
 #text {
     padding: 10px 100px;
     overflow-y: scroll;
+    height: 80%;
 }
 
-hr {
-    border: 1px solid #afa7a7;
-    margin: 10px 0;
-    width: 90%;
-    ;
-
-}
-
+/*..........................................Buttons*/
 /* Buttons */
 .btn-grid,
 .second-grid {
@@ -91,6 +97,7 @@ hr {
     font-family: "zen loop", sans-serif;
     font-size: 1rem;
     font-weight: bolder;
+    letter-spacing: 1px;
     padding: 2px;
     margin: 0 50px;
 }
@@ -100,15 +107,8 @@ hr {
     box-shadow: inset 0 0 2px 1px #000;
 }
 
-/*Footer*/
-footer {
-    width: 100vw;
-    height: 40px;
-    position: fixed;
-    bottom: 0px;
-    margin: 0;
-}
 
+/*..........................................Footer*/
 .copyright {
     display: inline;
     padding-left: 5%;
@@ -140,76 +140,17 @@ footer {
     color: #6e5494;
 }
 
-/* Media Queries */
-@media screen and (max-width: 992px) {
-
-    #grid {
-        position: fixed;
-        bottom: 50px;
-        display: flex;
-        justify-content: center;
-        height: 85%;
-    }
-
+/*..........................................Media Queries*/
+@media only screen and (max-width: 600px) {
     #game-text {
-        position: fixed;
-        height: 50vh;
+        height: 60%;
+    }
+    #inventory{
+        height: 40%;
     }
 
-    #inventory {
-        position: fixed;
-        bottom: 50px;
-        height: 35vh;
+    #achievements{
+        display: grid;
+        grid-template-columns: repeat(2, auto);   
     }
-
-    #game-text,
-    #inventory {
-        width: 90%;
-        padding: 1px;
-        margin-bottom: revert;
-        align-items: center;
     }
-
-    h2 {
-        font-size: 1.2rem;
-        margin: 5px;
-    }
-
-    #text {
-        padding: 10px 10px;
-    }
-
-    .btn-grid {
-        margin-bottom: 10px;
-        justify-content: center;
-    }
-
-    .btn {
-        margin: 0 5px;
-    }
-}
-
-@media screen and (max-width: 393px) {
-
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    h2 {
-        font-size: 1rem;
-    }
-
-    #grid {
-        height: 80%;
-    }
-
-    .btn-grid,
-    .second-grid {
-        padding: 1px;
-    }
-
-    .btn {
-        width: 100px;
-    }
-
-}
