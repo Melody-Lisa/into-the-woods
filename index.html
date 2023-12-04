@@ -21,26 +21,25 @@
     <h1 class="text-center">Into The Woods</h1>
     <nav class="navbar py-1">
         <div class="container mx-auto w-50">
-            <span class="nav-hover" type="button" data-bs-toggle="modal" data-bs-target="#inventory-modal"
-                aria-label="Toggle inventory">
-                <i class="fa-solid fa-book"></i>
-            </span>
+            <button class="nav-hover fa-solid fa-book" data-bs-toggle="modal" data-bs-target="#inventory-modal"
+                aria-label="toggle inventory">
+        </button>
 
-            <span class="nav-hover" type="button" data-bs-toggle="modal" data-bs-target="#settings-modal"
-                aria-label="Toggle settings">
-                <i class="fa-solid fa-trophy"></i></span>
+            <button class="nav-hover fa-solid fa-trophy" data-bs-toggle="modal"
+                data-bs-target="#settings-modal" aria-label="toggle settings">
+    </button>
 
-            <span id="audio-btn" class="nav-hover socials" aria-label="Turn music on and off">
+            <button id="audio-btn" class="nav-hover socials" aria-label="toggle music on or off">
                 <i id="off" class="fa-solid fa-volume-xmark"></i>
                 <i id="on" class="fa-solid fa-volume-high"></i>
-            </span>
+            </button>
             <audio id="game-music" src="assets/music.mp3"></audio>
         </div>
     </nav>
     <!-- /Settings Navbar -->
 
     <!-- Navbar Modals -->
-    <div class="modal fade" id="settings-modal" tabindex="-1" aria-labelledby="achievements modal" aria-hidden="true">
+    <div class="modal fade" id="settings-modal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
@@ -56,7 +55,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="inventory-modal" tabindex="-1" aria-labelledby="inventory modal" aria-hidden="true">
+    <div class="modal fade" id="inventory-modal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
@@ -72,25 +71,25 @@
     <!-- /Navbar Modals -->
 
     <!-- Main -->
-    <article id="grid" class="container justify-content-center mx-auto">
-        <section id="game-text">
+    <div id="grid" class="container justify-content-center mx-auto">
+        <div id="game-text">
             <div id="text" class="sentence"></div>
             <div id="ending" class="unlocked"></div>
             <div id="option-buttons" class="btn-grid"></div>
-        </section>
-    </article>
+        </div>
+    </div>
     <!-- /Main -->
 
     <!-- Footer -->
     <nav class="navbar fixed-bottom">
         <div class="container-fluid">
             <span class="copyright"><i class="fa-solid fa-copyright"></i> <strong>Melody Lisa 2023</strong></span>
-            <section class="socials">
+            <div class="socials">
                 <a class="linked" target="_blank" aria-label="linkedin" href="http://www.linkedin.com/in/melodyshutt"><i
                         class="fa-brands fa-linkedin"></i></a>
                 <a class="git" target="_blank" aria-label="github" href="https://github.com/Melody-Lisa"><i
                         class="fa-brands fa-github"></i></a>
-            </section>
+                </div>
         </div>
     </nav>
     <!-- /Footer -->
