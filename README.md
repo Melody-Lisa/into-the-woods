@@ -1,4 +1,6 @@
-# into-the-woods
+# Into the Woods
+
+<img src="assets/images/intothewoods-responsive.png" alt="An image representing how the site looks across different devices of varying size.">
 
 This is the documentation for Into the Woods - interactive javascript game. The site has been built using HTML5, CSS3 and Javascript for the Milestone 2 project for Code Institute's web development diploma.
 
@@ -6,10 +8,14 @@ This is the documentation for Into the Woods - interactive javascript game. The 
 
 ## Contents
 
-* 
-* 
-* 
-* 
+* [User Experience (UX)](#user-experience---ux)
+  * [Strategy](#strategy)
+    * [User Stories](#user-stories)
+  * [Scope](#scope)
+  * [Structure](#structure)
+  * [Skeleton](#skeleton)
+* [User Interface (UI) Design](#user-interface---design)
+  * [Typography](#typography) 
 
 <sup><sub>[*Back to top*](#contents)</sup></sub>
 
@@ -69,20 +75,57 @@ As the site has only one page there will be no navigation route. The links at th
 
 All wireframes have been created with [Figma](https://figma.com/).
 
-<details><summary>Into the Woods Full Responsive Wireframes</summary>
+<details><summary>Into the Woods Desktop Wireframe</summary>
 <img src="assets/images/intothewoods-desktopwireframe.png" alt="Desktop wireframe made with figma">
+</details>
 
+<details><summary>Into the Woods Tablet Wireframe</summary>
 <img src="assets/images/intothewoods-tabletwireframe.png" alt="Tablet wireframe made with figma">
+</details>
 
+<details><summary>Into the Woods Mobile Wireframe</summary>
 <img src="assets/images/intothewoods-mobilewireframe.png" alt="Mobile wireframe made with figma">
+</details>
 
+<details><summary>Into the Woods Modals Wireframe</summary>
 <img src="assets/images/intothewoods-inventorywireframe.png" alt="Inventory modal wireframe made with figma">
 
 <img src="assets/images/intothewoods-achievementswireframe.png" alt="Achievements modal wireframe made with figma">
 </details>
+
+-------
 
 The wireframes featured here are the final versions of the wireframes. The original wireframes were created with the idea of having multiple game containers for the inventory and achievements sections. After some consideration I decided to use only one container and implement modals for the smaller sections. This would allow for more seamless styling for the game container.
 
 <sup><sub>[*Back to top*](#contents)</sup></sub>
 
 -----
+
+## User Interface - Design
+
+### Surface
+
+#### Typography
+
+Fonts have been imported from [Google Fonts](https://fonts.google.com/).
+
+* The [Pixelify Sans](https://fonts.google.com/specimen/Pixelify+Sans?query=Pixelify+Sans) font has been used for the main title along with the main text used for the game. "Cursive" is the fallback font in case the browser doesn't import the font correctly. I chose this style of font as I believe it fits with the theme of the product. Letter spacing has been added to the game text for better readability. 
+
+* The [Zen Loop](https://fonts.google.com/specimen/Zen+Loop?query=zen+loop) font has been used for the buttons. Sans-serif is the fallback font in case the browser doesn't import the font correctly. I chose this as it is a sleek font that doesn't make the buttons look too busy or bulky when there is more text within the options.
+
+#### Colours
+
+The colour scheme for the site was kept as simple as possible to avoid too much going on with the inclusion of the brown parchment background image. The main game container is black with reduced opacity. Text within the game container, modals and buttons is a silver/grey and text outside of the containers is black. The buttons and nav item hover effects across the game are red to contrast with the rest of the page to make them stand out. The linkedin and github icons have hover effects that change the colour of the icons to match the colours of their respective logos.
+
+
+<details><summary>Main colour scheme for the site</summary>
+<img src="assets/images/intothewoods-colourpallet.png" alt="Colour pallet made with coolors features parchment brown, black for the game container and outer text, red for the buttons, silver/grey for in-game font, and blue and purple for the linkedin and github icon hover effects respectively.">
+</details>
+
+--------
+
+Colour scheme images made with [figma](https://figma.com).
+
+<sup><sub>[*Back to top*](#contents)</sup></sub>
+
+-------
