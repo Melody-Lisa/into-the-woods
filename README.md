@@ -129,3 +129,94 @@ Colour scheme images made with [figma](https://figma.com).
 <sup><sub>[*Back to top*](#contents)</sup></sub>
 
 -------
+
+## Features
+
+### Header
+
+<details><summary>Header</summary>
+<img src="assets/images/intothewoods-header.png" alt="The header featured at the top of the page, titled 'Into the Woods'">
+</details>
+
+The header "Into the Woods" appears at the top of the page in all screen sizes.
+
+<details><summary>Navbar</summary>
+<img src="assets/images/intothewoods-navbar.png" alt="The navigation featured at the top of the page below the header, there are three icons that can be clicked to view inventory, view achievements, and toggle music">
+</details>
+
+The navbar contains three icons that can be clicked to view the inventory, view achievements, and toggle music. The inventory and achievements icons open modals that contain the inventory and achievements text nodes. The music icon toggles the music on and off.
+
+### Main
+
+<details><summary>Game Container</summary>
+<img src="assets/images/intothewoods-gamecontainer.png" alt="The game container featured below the navbar, this is where the game is played.">
+</details>
+
+<details><summary>About Section</summary>
+<img src="assets/images/intothewoods-about.png" alt="The about section featured within the game container, this is where the user can find out more about the game.">
+</details>
+
+<details><summary>Game</summary>
+<img src="assets/images/intothewoods-game.png" alt="The game container featured below the navbar, this is where the game is played.">
+</details>
+
+<details><summary>Item Specific Options</summary>
+<img src="assets/images/idonthavetheamulet.png" alt="Game options tailored to which items you have. We don't have the amulet here.">
+<img src="assets/images/ihavetheamulet.png" alt="Game options tailored to which items you have. We do have the amulet here.">
+</details>
+
+<details><summary>Endings</summary>
+<img src="assets/images/intothewoods-ending.png" alt="The endings text node that is opened when the game container.">
+</details>
+
+<details><summary>Credits</summary>
+<img src="assets/images/intothewoods-credit.png" alt="The credits text node that is opened when the game container.">
+</details>
+
+The game container appears in the center of the page and is where the game is played. The game container contains the about section, game, endings and credits text nodes. 
+
+* The start game and about section are the first text nodes that the user can click when the page loads. 
+
+* The game text nodes are where the user will make their choices and potentially collect items that will be shown within the inventory modal during gameplay. 
+
+* An endings text node is opened when the game is completed which will be logged within the achievements modal and the credits text node can be opened from any ending.
+
+### Modals
+
+<details><summary>Inventory Modal</summary>
+<img src="assets/images/intothewoods-inventory.png" alt="The inventory modal that is opened when the inventory icon is clicked in the navbar.">
+</details>
+
+The inventory modal can be opened at any time during gameplay and does not affect the game. The inventory modal contains the items that the user has collected during a playthrough. This will be cleared every time the user begins a new game as there is a section of the game that shows different options based on the inventory items the player has.
+
+<details><summary>Achievements Modal</summary>
+<img src="assets/images/intothewoods-achievements.png" alt="The achievements modal that is opened when the achievements icon is clicked in the navbar.">
+</details>
+
+The achievements modal can be opened at any time during gameplay and does not affect the game. The achievements modal contains the endings that the user has collected over multiple playthroughs. This is not cleared every time the user begins a new game so that the user can see which endings they have collected.
+
+### Footer
+
+<details><summary>Footer</summary>
+<img src="assets/images/intothewoods-footer.png" alt="The footer featured at the bottom of the page, this contains the social media links and copyright information.">
+</details>
+
+The footer contains the copyright information and social media links. The social media links open in a new tab.
+
+<sup><sub>[*Back to top*](#contents)</sup></sub>
+
+------
+
+## Future Implementations
+
+1. The game text originally featured a typewriter effect that was removed due to the requirement of html within the text nodes. I would like to implement this in future versions of the site on certain text nodes or with refactoring of text nodes.
+
+2. There was a plan early on in development to implement dynamic background images that would change depending on the text node that was being displayed. This was not achievable within the timeframe of the project, but is an option to look into in future versions of the site.
+
+3. Due to the nature of the project I was unable to implement a save feature for the game. This is an option to look into in future versions of the site.
+
+4. Due to the time constraints of the project the game itself is designed as a demo. I would like to implement a full game in future versions of the site.
+
+<sup><sub>[*Back to top*](#contents)</sup></sub>
+
+-----
