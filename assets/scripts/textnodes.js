@@ -448,7 +448,6 @@ const textNodes = [
                 text: "Hand over the amulet.",
                 nextText: 26,
                 requiredInventory: (currentInventory) => currentInventory.amulet,
-                setEndCollection: { book: true }
             },
             {
                 text: "I don't have the amulet.",
