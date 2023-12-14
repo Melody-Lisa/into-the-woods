@@ -10,12 +10,41 @@ This is the documentation for Into the Woods - interactive javascript game. The 
 
 * [User Experience (UX)](#user-experience---ux)
   * [Strategy](#strategy)
+    * [User Goals](#user-goals)
+    * [Site Owner Goals](#site-owner-goals)
     * [User Stories](#user-stories)
   * [Scope](#scope)
   * [Structure](#structure)
   * [Skeleton](#skeleton)
 * [User Interface (UI) Design](#user-interface---design)
-  * [Typography](#typography) 
+  * [Typography](#typography)
+  * [Colours](#colours)
+* [Features](#features)
+    * [Header](#header)
+    * [Main](#main)
+    * [Modals](#modals)
+    * [Footer](#footer)
+* [Future Implementations](#future-implementations)
+* [Accessibility](#accessibility)
+  * [Alt Text](#alt-text)
+  * [Aria Labels](#aria-labels)
+  * [Colours](#colours-1)
+  * [Fonts](#fonts)
+* [Technologies Used](#technologies-used)
+  * [Languages](#languages)
+  * [Frameworks, Libraries, and Programs Used](#frameworks-libraries-and-programs-used)
+* [Deployment & Local Development](#deployment--local-development)
+  * [Deployment](#deployment)
+  * [Local Development](#local-development)
+    * [How to Fork](#how-to-fork)
+    * [How to Clone](#how-to-clone)
+* [Testing](#testing)
+* [Credits](#credits)
+  * [Code Used](#code-used)
+  * [Content](#content)
+  * [Media](#media)
+  * [Achnowledgements](#acknowledgements)
+ 
 
 <sup><sub>[*Back to top*](#contents)</sup></sub>
 
@@ -220,3 +249,143 @@ The footer contains the copyright information and social media links. The social
 <sup><sub>[*Back to top*](#contents)</sup></sub>
 
 -----
+
+## Accessibility
+
+### Alt Text
+
+Alternative text has been included for all images across the site.
+
+### Aria Labels
+
+Aria labels have been included for all links across the site with modals labelled by their headings.
+
+### Colours
+
+The colours across the site have been kept simple with black text over the light parchment background and light grey text over the black game container. The buttons have a red background with light grey text to contrast with the rest of the page. The light grey text has been chosen over pure white to reduce harshness on the eyes while also maintaining a high contrast ratio.
+
+### Fonts
+
+The fonts used across the game have had letter spacing added to improve readability.
+
+<sup><sub>[*Back to top*](#contents)</sup></sub>
+
+-------
+
+## Technologies Used
+
+### Languages
+
+- HTML
+- CSS
+- Javascript
+
+### Frameworks, Libraries, and Programs Used
+
+* [Bootstrap V5.3](https://getbootstrap.com/) - The framework for the website. Additional CSS styling was also implemented in style.css.
+
+* [Figma](https://figma.com/) - For wireframes and other graphics in readme.
+
+* [Font Awesome](https://fontawesome.com/) - For the iconography on the website.
+
+* Git - For version control.
+
+* [Github](https://github.com/) - To save and store the files for the website.
+
+* Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
+
+* [JS Hint](https://jshint.com/) - To check the javascript code for errors.
+
+* [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
+
+* [Pexels](https://pexels.com/) - For background image and music.
+
+* [UI.dev](https://ui.dev/amiresponsive) - To show the site on a range of screen sizes.
+
+<sup><sub>[*Back to top*](#contents)</sup></sub>
+
+-------
+
+## Deployment & Local Development
+
+### Deployment
+
+Github Pages was used to deploy the live website. The instructions to achieve this are below:
+
+1. Log in (or sign up) to [Github](https://github.com/).
+2. Find the repository for this project, [into-the-woods](https://github.com/Melody-Lisa/into-the-woods/).
+3. Click on the Settings link.
+4. Click on the Pages link in the left hand side navigation bar.
+5. In the Source section, choose main from the drop down select branch menu. Select Root from the drop down select folder menu.
+6. Click Save. Your live Github Pages site is now deployed at the URL shown.
+
+### Local Development
+
+* #### How to Fork
+
+To fork the into-the-woods repository:
+
+1. Log in (or sign up) to [Github](https://github.com/).
+2. Go to the repository for [this project](https://github.com/Melody-Lisa/into-the-woods/).
+3. Click the Fork button in the top right corner.
+
+* #### How to Clone
+
+To clone the into-the-woods repository:
+
+1. Log in (or sign up) to [Github](https://github.com/).
+2. Go to the repository for [this project](https://github.com/Melody-Lisa/into-the-woods/).
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
+<sup><sub>[*Back to top*](#contents)</sup></sub>
+
+-----
+
+## Testing
+
+Please see [testing.md](testing.md) for all testing elements of this site.
+
+<sup><sub>[*Back to top*](#contents)</sup></sub>
+
+-----
+
+## Credits
+
+### Code Used
+
+* [Bootstrap](https://getbootstrap.com/docs/5.3/components/modal/): Code from this page was used and adapted to create the modals.
+
+* [Math With Crab](https://github.com/zhannamatuzak/math-with-crab/tree/main): Code from this project was used and adapted to create the music functionality.
+
+* [Web Dev Simplified](https://www.youtube.com/watch?v=R1S_NhKkvGA): Youtube: This walkthrough was used and adapted to create the game functionality.
+
+### Content
+
+* [ChatGPT](https://chat.openai.com/): Used to generate content for the game.
+* [Melody Lisa](https://github.com/Melody-Lisa): All other content created by the developer.
+
+### Media
+
+* [Pexels](https://www.pexels.com/photo/empty-brown-canvas-235985/): Used to source the background image for the site.
+
+* [PixaBay](https://pixabay.com/music/beats-mysterious-forest-creepy-lofi-halloween-lofi-halloween-music-168238/): Used to source the music for the site.
+
+* [UI.dev](https://ui.dev/amiresponsive): Used to generate images that showcase the responsive design within the readme file.
+
+### Acknowledgements
+
+* Jubril Akolade - Mentor: For the encouragement and providing great insights into building my project.
+
+* [Iris Smok](https://github.com/Iris-Smok) - Cohort Facilitator: For hosting informative standup's and providing a great class atmosphere.
+
+* Irene Neville - Cohort Facilitator: For taking over the cohort during the final stages of the project and providing great insights into building my project.
+ 
+* Class June 2023: Everyone in my class channel on slack who is involved with the stand ups and group chat for contributing to the great atmosphere and supportive environment.
+ 
+* The wider slack community: For quick responses to various issues and questions I had at all stages of the project.
+ 
+* Friends and Family: For helping me to test my site on various devices and provide feedback.
+
+<sup><sub>[*Back to top*](#contents)</sup></sub>
