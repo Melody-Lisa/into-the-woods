@@ -24,6 +24,7 @@ This is the documentation for Into the Woods - interactive javascript game. The 
     * [Main](#main)
     * [Modals](#modals)
     * [Footer](#footer)
+    * [404 Page](#404-page)
 * [Future Implementations](#future-implementations)
 * [Accessibility](#accessibility)
   * [Alt Text](#alt-text)
@@ -232,6 +233,14 @@ The achievements modal can be opened at any time during gameplay and does not af
 
 The footer contains the copyright information and social media links. The social media links open in a new tab.
 
+### 404 Page
+
+<details><summary>404 Page</summary>
+<img src="assets/images/intothewoods-404.png" alt="The 404 page that is shown when the user types in an incorrect url.">
+</details>
+
+The 404 page is a custom page that redirects the user to the main page if they type in an incorrect url.
+
 <sup><sub>[*Back to top*](#contents)</sup></sub>
 
 ------
@@ -245,6 +254,10 @@ The footer contains the copyright information and social media links. The social
 3. Due to the nature of the project I was unable to implement a save feature for the game. This is an option to look into in future versions of the site.
 
 4. Due to the time constraints of the project the game itself is designed as a demo. I would like to implement a full game in future versions of the site.
+
+5. I would like to implement a feature that allows the user to choose their own name in future versions of the site.
+
+6. At this stage of development the 404 page loads only when the user types in an incorrect url to the main page. I would like to implement a 404 page that loads if the user clicks on any broken link within the site, including the modals.
 
 <sup><sub>[*Back to top*](#contents)</sup></sub>
 
