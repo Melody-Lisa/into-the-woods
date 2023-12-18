@@ -4,10 +4,11 @@
 
 ## Contents
 
-* [Automated Testing](#automated-testing)
+* [Automated Validation](#automated-checks-and-validation)
     * [W3C Validator](#w3c-validator)
     * [Lighthouse](#lighthouse)
     * [JSHint](#jshint)
+    * [Accessibility Testing](#accessibility-testing)
 * [Manual Testing](#manual-testing)
     * [Testing User Stories](#testing-user-stories)
     * [Full Testing](#full-testing)
@@ -17,7 +18,7 @@
 
 -----
 
-## Automated Testing
+## Automated Checks and Validation
 
 This automated testing section contains all testing that has been run through a program to produce validation and performance insights.
 
@@ -69,6 +70,17 @@ The lighthouse tool within the chrome developer tools has been used to test perf
 </details>
 
 All JavaScript files tested through JSHint returned no errors or warnings when the 'ES6' option was selected and all files were tested together.
+
+### Accessibility Testing
+
+I did extra accessibility testing of the site using [WAVE](https://wave.webaim.org/) 
+
+<details><summary>Wave Test Results</summary>
+<img src="assets/images/intothewoods-wavetest.png" alt="Wave test results for game page with no errors">
+<img src="assets/images/intothewoods-audioalert.png" alt="Wave test results alert for audio">
+</details>
+
+The results of the wave test show no errors on the page. The audio alert is a warning to let me know that I have audio on the page and may need to include a transcript. I have chosen not to include a transcript as the audio is ambient music and not necessary for the game. The audio is also controlled by the user and can be turned on and off at any time.
 
 <sup><sub>[*Back to top*](#contents)</sup></sub>
 
