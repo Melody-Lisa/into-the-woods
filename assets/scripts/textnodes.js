@@ -258,7 +258,6 @@ const textNodes = [
             {
                 text: "Quickly get in the car and drive away from this eerie place.",
                 nextText: 15,
-                setEndCollection: { smart: true },
             }
         ]
     },
