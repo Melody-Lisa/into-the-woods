@@ -2,6 +2,10 @@
 
 <img src="assets/images/intothewoods-responsive.png" alt="An image representing how the site looks across different devices of varying size.">
 
+By Melody Lisa.
+
+[View the live project here.](https://melody-lisa.github.io/into-the-woods/)
+
 This is the documentation for Into the Woods - interactive javascript game. The site has been built using HTML5, CSS3 and Javascript for the Milestone 2 project for Code Institute's web development diploma.
 
 ******
@@ -55,7 +59,7 @@ This is the documentation for Into the Woods - interactive javascript game. The 
 
 ### Strategy
 
-This project was inspired by my interest in RPG style gaming and storytelling. The goal is to create an interactive and user-friendly choose your own adventure demo.
+This project was built as a milestone project on my Diploma in Web Application Development with [Code Institute](https://codeinstitute.net/) as a learning tool for interactive frontend development and my first project using JavaScript and so there was no specific client. However, in order to create a more professional product I treated it as a real-world application inspired by my own interest in RPG style gaming and storytelling. The goal was to create an interactive and user-friendly choose your own adventure demo for anyone who enjoys a good story and a bit of spooky fun.
 
 #### User Goals
 
@@ -149,10 +153,8 @@ The colour scheme for the site was kept as simple as possible to avoid too much 
 
 
 <details><summary>Main colour scheme for the site</summary>
-<img src="assets/images/intothewoods-colourpallet.png" alt="Colour pallet made with coolors features parchment brown, black for the game container and outer text, red for the buttons, silver/grey for in-game font, and blue and purple for the linkedin and github icon hover effects respectively.">
+<img src="assets/images/intothewoods-colourpallet.png" alt="Colour pallet made with figma features parchment brown, black for the game container and outer text, red for the buttons, silver/grey for in-game font, and blue and purple for the linkedin and github icon hover effects respectively.">
 </details>
-
---------
 
 Colour scheme images made with [figma](https://figma.com).
 
@@ -161,6 +163,15 @@ Colour scheme images made with [figma](https://figma.com).
 -------
 
 ## Features
+
+### Favicon
+
+<details><summary>Favicon</summary>
+<img src="assets/images/intothewoods-favicon.png" alt="The favicon for the site, a red circle background with a white W.">
+</details>
+
+The favicon for the site is a red circle with a white W. This is a simple design that is easy to recognise and matches the colour scheme of the site. The favicon was created using [favicon.io](https://favicon.io/).
+
 
 ### Header
 
@@ -255,9 +266,11 @@ The 404 page is a custom page that redirects the user to the main page if they t
 
 4. Due to the time constraints of the project the game itself is designed as a demo. I would like to implement a full game in future versions of the site.
 
-5. I would like to implement a feature that allows the user to choose their own name in future versions of the site.
+5. I would like to implement a feature that shows more information about the achievements that the user has collected in future versions of the site. This could be done by adding a tooltip with some information about the ending when the user hovers over the achievment within the modal.
 
 6. At this stage of development the 404 page loads only when the user types in an incorrect url to the main page. I would like to implement a 404 page that loads if the user clicks on any broken link within the site, including the modals.
+
+7. After testing with accessibility tools I found that every new text node that is loaded, the screen reader will read the entire page again. I would like to implement a feature that will only read the new text node when it is loaded in future versions of the site.
 
 <sup><sub>[*Back to top*](#contents)</sup></sub>
 
@@ -297,6 +310,8 @@ The fonts used across the game have had letter spacing added to improve readabil
 
 * [Bootstrap V5.3](https://getbootstrap.com/) - The framework for the website. Additional CSS styling was also implemented in style.css.
 
+* [favicon](https://favicon.io/) - To create the favicon for the site.
+
 * [Figma](https://figma.com/) - For wireframes and other graphics in readme.
 
 * [Font Awesome](https://fontawesome.com/) - For the iconography on the website.
@@ -313,7 +328,13 @@ The fonts used across the game have had letter spacing added to improve readabil
 
 * [Pexels](https://pexels.com/) - For background image and music.
 
+* [Pixabay](https://pixabay.com/) - For music.
+
+* [Red Ketchup](https://redketchup.io/image-resizer) - To convert background image to webp format.
+
 * [UI.dev](https://ui.dev/amiresponsive) - To show the site on a range of screen sizes.
+
+* [W3C Markup Validation Service](https://validator.w3.org/) - To validate HTML and CSS code.
 
 <sup><sub>[*Back to top*](#contents)</sup></sub>
 
