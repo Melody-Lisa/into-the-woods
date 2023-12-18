@@ -187,3 +187,24 @@ Additional testing has been carried out by friends and colleagues including on a
 <sup><sub>[*Back to top*](#contents)</sup></sub>
 
 ------
+
+## Bugs
+
+### Solved Bugs
+
+| # | Issue | Details | What was done | Fixed? |
+| --- | --- | --- | --- | --- |
+| 1 | Filepath issues between vscode and github deployment | Filepaths for styles and scripts were not working when deployed to github pages | Filepaths were updated to work with github deployment | __Yes__ |
+| 2 | Inventory | Inventory items were not being removed when the game was reset | Added a function to remove all items from the inventory when the game is reset | __Yes__ |
+| 3 | Duplucated endings | When the same ending was reached it would appear multiple times in the achievements modal | Add an if statement to check whether the ending has already been collected | __Yes__ |
+| 4 | Dynamic background | Inclusion of dynamic backgrounds to the game container not working as expected | Feature was removed to allow for more time to work on other features and has been added to the future implementations section | __Removed__ |
+| 5 | Typewriter effect | Typewriter effect for the game text nodes not working due to inclusion of HTML within the text nodes | Typewriter effect was removed to allow for more time to work on other features and has been added to the future implementations section | __Removed__ |
+
+
+### Known Bugs
+
+There are currently no known bugs in this version of the site.
+
+<sup><sub>[*Back to top*](#contents)</sup></sub>
+
+-----

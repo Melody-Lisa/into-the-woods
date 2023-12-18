@@ -45,13 +45,13 @@ function showTextNode(textNodeIndex) {
         endElement.innerHTML = textNode.end;
     }
 
-    /* Show inventory items within the side container */
+    /* Show inventory items within the inventory modal */
     if (textNode.inventory) {
         inventoryElement.innerHTML += textNode.inventory;
 
     }
 
-    /* Show achievements within the side container */
+    /* Show achievements within the achievements modal */
     if (textNode.achieved && !achievementElement.innerHTML.includes(textNode.achieved)) {
         achievementElement.innerHTML += textNode.achieved;
     }
