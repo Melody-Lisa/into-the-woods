@@ -88,7 +88,7 @@ h1 {
 }
 
 .btn {
-    width: 120px;
+    width: 150px;
     border-radius: 5px;
     background-color: #600e0e;
     color: #afa7a7;
@@ -147,9 +147,11 @@ h1 {
     #text {
         padding: 10px 25px;
     }
+}
 
+@media only screen and (max-width: 400px) {
     .btn {
-        width: 200px;
-        margin: 0 25px;
+        width: 130px;
+        margin: 0 10px;
     }
 }
