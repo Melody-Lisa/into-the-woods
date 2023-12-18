@@ -73,6 +73,49 @@ All JavaScript files tested through JSHint returned no errors or warnings when t
 
 ## Manual Testing
 
+### Testing User Goals
+
+> * Play a simple adventure game that is fun and engaging.
+
+The game is designed to be simple to play with a single click of the mouse or tap of the screen. The game is also designed to be played on mobile devices with a single tap of the screen. The game is designed to be fun and engaging with multiple endings and a variety of choices to make with the option to add ambient sound effects to enhance the experience.
+
+> * Be able to collect multiple endings by replaying the game.
+
+At this time the game is designed only as a demo, however, it has been created with replayability in mind with multiple short paths to explore and multiple endings to discover. These endings are tracked in the achievements modal and can be viewed at any time while the user is on the site.
+
+
+### Testing Site Owner Goals
+
+> * Create a game that is fun and engaging.
+
+<details><summary>Inventory Features</summary>
+<img src="assets/images/idonthavetheamulet.png" alt="Game screenshot without necessary items. You don't have the amulet">
+<img src="assets/images/ihavetheamulet.png" alt="Game screenshot with necessary items. You have the amulet">
+<img src="assets/images/itsdarkoutside.png" alt="Game screenshot with necessary items. It's dark outside">
+</details>
+
+The game is designed to be fun and engaging with ten different endings and a variety of choices to make with the game to add ambient music and small implementation of inventory functionality to enhance the experience with users needing certain items for specific sections of the game, starting with the flashlight in order to look around outside.
+
+> * Design the game to be visually appealing.
+
+<details><summary>Responsive Design</summary>
+<img src="assets/images/intothewoods-responsive.png" alt="Responsive design of the page">
+</details>
+
+The game is designed to be visually appealing with a simple design and responsive layout that is easy to navigate and play on all devices.
+
+> * Provide a responsive and accessible website.
+
+The game is designed to be responsive and accessible with a simple design and responsive layout that is easy to navigate and play on all devices. The game has been tested on mobile devices using accessibility tools including talkback feature for screen readers.
+
+> * Create seamless interactivity that can't be accidentally broken by the user.
+
+<details><summary>404</summary>
+<img src="assets/images/intothewoods-404.png" alt="404 page">
+</details>
+
+Javascript funtions have been implemented within the game container so that only options that take the user to the next part of the game are clickable. The navigation bar is always visible at the top of the page to access any extra features. The 404 page is designed to navigate the user back to the game page if an incorrect url is entered.
+
 ### Testing User Stories
 
 > * I want to be able to easily navigate through the game.
@@ -86,7 +129,7 @@ The game is designed to be simple to navigate. The navigation bar is always visi
 > * I want to be able to see the different endings I have discovered.
 
 <details><summary>Achievements</summary>
-<img src="assets/images/intothewoods-achievements.png" alt="Achievements">
+<img src="assets/images/intothewoods-allachievements.png" alt="Achievements">
 </details>
 
 The achievements modal is designed to show the user which endings they have discovered. The achievements modal is also designed to be simple to navigate with a single click of the mouse or tap of the screen and is always available in the navigation bar.
