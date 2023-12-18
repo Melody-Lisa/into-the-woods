@@ -141,3 +141,49 @@ The achievements modal is designed to show the user which endings they have disc
 </details>
 
 The inventory modal is designed to show the user which items they have in their inventory. The inventory modal is also designed to be simple to navigate with a single click of the mouse or tap of the screen and is always available in the navigation bar.
+
+### Full Testing
+
+Full testing was performed on the following devices:
+
+* Laptop
+  * Lenovo IDEAPAD Flex 5i
+
+* Mobile
+  * Samsung Galaxy S20 FE 5G
+ 
+ Desktop device tested the site using the following browsers:
+ 
+ * Google Chrome
+ * Mozilla Firefox
+ * Opera
+ * Microsoft Edge
+
+Additional testing has been carried out by friends and colleagues including on apple devices and safari with no bugs reported back.
+
+#### Manual Features Tests
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| The inventory icon | Link opens a modal to show inventory | Clicked icon | Inventory modal opens and shows items based on where you are in the game | __Pass__ |
+| The inventory modal close button | Closes the modal | Clicked button | Inventory modal closes | __Pass__ |
+| The achievements icon | Link opens a modal to show achievements | Clicked icon | Achievements modal opens and shows achievements based on which endings you have collected. Achievements remain for each new playthrough | __Pass__ |
+| The achievements modal close button | Closes the modal | Clicked button | Achievements modal closes | __Pass__ |
+| The music icon | Toggles music on and off. Icon changes to show when music is playing or paused | Clicked link | Icon changes and music plays and pauses | __Pass__ |
+| Nav icons hover effect | Link changes colour to red | Hover mouse over link | Colour changes to red | __Pass__ |
+| The about button | Opens the about text node with button to return to game | Clicked link | Text node and button appear | __Pass__ |
+| Game text nodes | Clicking options buttons takes you to the next text node in the game | Clicked buttons | All buttons take you to correct text nodes in the game | __Pass__ |
+| Inventory Updates | List item appears in the inventory modal when the story tells you that you have an item | Play through game and checked modal at different intervals | Items appear in the modal during a playthrough and are reset at the start of each game | __Pass__ |
+| Achievements Updates | Endings appear in the achievements modal when you reach specific endings | Play through game and checked modal at the end of each playthrough | Achievements appear in the modal and are not duplicated if you reach the same ending twice | __Pass__ |
+| The credits button | Opens the credits text node with button to return to game | Clicked link | Text node and button appear | __Pass__ |
+| Link in credits | Link opens to my github in a new tab | Clicked link | Link opens in a new tab | __Pass__ |
+| LinkedIn icon in footer | Link opens to my LinkedIn in a new tab | Clicked icon | Link opens in a new tab | __Pass__ |
+| LinkedIn hover effect | Icon changes colour to blue | Hover mouse over icon | Colour changes to blue | __Pass__ |
+| GitHub icon in footer | Link opens to my GitHub in a new tab | Clicked icon | Link opens in a new tab | __Pass__ |
+| GitHub hover effect | Icon changes colour to purple | Hover mouse over icon | Colour changes to purple | __Pass__ |
+| 404 page | 404 page appears when incorrect url is entered | Entered incorrect url | 404 page appears | __Pass__ |
+| Aria labels on links | Provides descriptions of links across the site | Browsed site on desktop and mobile with screen readers active | Screen readers read descriptions of links | __Pass__ |
+
+<sup><sub>[*Back to top*](#contents)</sup></sub>
+
+------
