@@ -43,6 +43,9 @@ This automated testing section contains all testing that has been run through a 
 
 All HTML and CSS tested through the validator returned no errors or warnings.
 
+> Notes for semantic html:
+The code for the main html page originally featured separation of sections using 'article' and 'section' tags. However, due to the nature of the game and the need for separated containers without the use of headings for each section, use of the 'div' tag seemed necessary to avoid errors in validation.
+
 ### Lighthouse
 
 The lighthouse tool within the chrome developer tools has been used to test performance, best practices, accessibility, and SEO. Desktop and mobile tests have been run for each page.
