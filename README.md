@@ -332,6 +332,8 @@ The fonts used across the game have had letter spacing added to improve readabil
 
 * [Red Ketchup](https://redketchup.io/image-resizer) - To convert background image to webp format.
 
+* Samsung Talkback - To test accessibility.
+
 * [UI.dev](https://ui.dev/amiresponsive) - To show the site on a range of screen sizes.
 
 * [W3C Markup Validation Service](https://validator.w3.org/) - To validate HTML and CSS code.
