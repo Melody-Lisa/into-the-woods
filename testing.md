@@ -4,6 +4,7 @@
 
 ## Contents
 
+* [Introduction](#introduction)
 * [Automated Validation](#automated-checks-and-validation)
     * [W3C Validator](#w3c-validator)
     * [Lighthouse](#lighthouse)
@@ -15,6 +16,14 @@
 * [Bugs](#bugs)
     * [Solved Bugs](#solved-bugs)
     * [Known Bugs](#known-bugs)
+
+-----
+
+## Introduction
+
+Here I developed a testing plan to make sure that the site was functioning as intended and I decided use predominantly manual testing for this project. I investigated the option of writing my own automated tests and ran a few trial tests at the beginning of the development process as part of my own learning and personal development, but I felt that it was not necessary for this application as it was a fairly simple app that would be better served by in-depth manual testing which I have detailed below.
+
+I ran my code through all validation and accessibility checkers noted below and have included screenshots of the results in this document. I also manually checked every feature of the site to ensure that it was working as intended and have included the results of this testing in this document.
 
 -----
 
@@ -45,7 +54,7 @@ This automated testing section contains all testing that has been run through a 
 All HTML and CSS tested through the validator returned no errors or warnings.
 
 > Notes for semantic html:
-The code for the main html page originally featured separation of sections using 'article' and 'section' tags. However, due to the nature of the game and the need for separated containers without the use of headings for each section, use of the 'div' tag seemed necessary to avoid errors in validation. The use of div tags within the modals has been copied and pasted as is from bootstrap.
+The code for the main html page originally featured separation of sections using 'article' and 'section' tags. However, due to the nature of the game and the need for separated containers without the use of headings for each section, use of the 'div' tag seemed necessary to avoid errors in validation. Each main section of the page has been created with semantic markup in mind. The use of div tags within the modals has been copied and pasted as is from bootstrap.
 
 ### Lighthouse
 
