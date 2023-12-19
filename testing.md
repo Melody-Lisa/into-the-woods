@@ -54,7 +54,7 @@ This automated testing section contains all testing that has been run through a 
 All HTML and CSS tested through the validator returned no errors or warnings.
 
 > Notes for semantic html:
-The code for the main html page originally featured separation of sections using 'article' and 'section' tags. However, due to the nature of the game and the need for separated containers without the use of headings for each section, use of the 'div' tag seemed necessary to avoid errors in validation. Each main section of the page has been created with semantic markup in mind. The use of div tags within the modals has been copied and pasted as is from bootstrap.
+The code for the main html page originally featured separation of sections using 'article' and 'section' tags. However, due to the nature of the game and the need for separated containers without the use of headings for each section, use of the 'div' tag seemed necessary to avoid errors in validation and styling, especially after the change in the game layout. Each main section of the page has been created with semantic markup in mind. The use of div tags within the modals has been copied and pasted as is from bootstrap.
 
 ### Lighthouse
 
