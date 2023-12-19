@@ -127,9 +127,17 @@ All wireframes have been created with [Figma](https://figma.com/).
 <img src="assets/images/intothewoods-achievementswireframe.png" alt="Achievements modal wireframe made with figma">
 </details>
 
--------
-
 The wireframes featured here are the final versions of the wireframes. The original wireframes were created with the idea of having multiple game containers for the inventory and achievements sections. After some consideration I decided to use only one container and implement modals for the smaller sections. This would allow for more seamless styling for the game container.
+
+<details><summary>Original Desktop Wireframe</summary>
+<img src="assets/images/intothewoods-originaldesktopwireframe.png" alt="Original desktop wireframe showing multiple containers for different game sections">
+</details>
+
+<details><summary>Original Mobile Wireframe</summary>
+<img src="assets/images/intothewoods-originalmobilewireframe.png" alt="Original mobile wireframe showing multiple containers for different game sections">
+</details>
+
+In the original wireframes I wanted to implement a feature that would allow the user to click on the inventory and achievements icons to toggle the content in the secondary container. After some consideration I decided to use modals for these sections instead as it would allow for more seamless styling for the game container and would be more user friendly. Future versions of the site may allow for the achievements to be viewed on a different page completely with more space to play with the inventory section.
 
 <sup><sub>[*Back to top*](#contents)</sup></sub>
 
