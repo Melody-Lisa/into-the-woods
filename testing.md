@@ -36,20 +36,20 @@ This automated testing section contains all testing that has been run through a 
 [W3C](https://validator.w3.org/#validate_by_input) was used to validate all HTML and CSS for the site via direct input. Each individual page was tested and final reconfiguration was carried out to ensure all results produced no errors.
 
 <details><summary>Game Page</summary>
-<img src="assets/images/intothewoods-w3htmlvalidation.png" alt="Main game HTML Validation">
+<img src="assets/docs/intothewoods-w3htmlvalidation.png" alt="Main game HTML Validation">
 </details>
-<img width="889" alt="No errors" src="https://github.com/Melody-Lisa/Folded-Fairy/assets/137832068/174478a9-9d01-4e3a-9a87-03ad93a14dea">
+<img src="assets/docs/noerrors.png" alt="No errors">
 
 
 <details><summary>404 Page</summary>
-<img src="assets/images/intothewoods-w3404validation.png" alt="404 page HTML Validation">
+<img src="assets/docs/intothewoods-w3404validation.png" alt="404 page HTML Validation">
 </details>
-<img width="889" alt="No errors" src="https://github.com/Melody-Lisa/Folded-Fairy/assets/137832068/174478a9-9d01-4e3a-9a87-03ad93a14dea">
+<img src="assets/docs/noerrors.png" alt="No errors">
 
 <details><summary>CSS Stylesheets</summary>
-<img src="assets/images/intothewoods-w3cssvalidation.png" alt="CSS Validation">
+<img src="assets/docs/intothewoods-w3cssvalidation.png" alt="CSS Validation">
 </details>
-<img width="889" alt="No errors" src="https://github.com/Melody-Lisa/Folded-Fairy/assets/137832068/174478a9-9d01-4e3a-9a87-03ad93a14dea">
+<img src="assets/docs/noerrors.png" alt="No errors">
 
 All HTML and CSS tested through the validator returned no errors or warnings.
 
@@ -61,8 +61,8 @@ The code for the main html page originally featured separation of sections using
 The lighthouse tool within the chrome developer tools has been used to test performance, best practices, accessibility, and SEO. Desktop and mobile tests have been run for each page.
 
 <details><summary>Game Page</summary>
-<img src="assets/images/intothewoods-desktoplighthouse.png" alt="Lighthouse desktop test results for home page">
-<img src="assets/images/intothewoods-mobilelighthouse.png" alt="Lighthouse mobile test results for home page">
+<img src="assets/docs/intothewoods-desktoplighthouse.png" alt="Lighthouse desktop test results for home page">
+<img src="assets/docs/intothewoods-mobilelighthouse.png" alt="Lighthouse mobile test results for home page">
 </details>
 
 | | Performance | Accessibility | Best Practice | SEO |
@@ -75,7 +75,7 @@ The lighthouse tool within the chrome developer tools has been used to test perf
 [JSHint](https://jshint.com/) was used to test all JavaScript files.
 
 <details><summary>Game Page</summary>
-<img src="assets/images/intothewoods-jshint.png" alt="JSHint results for game page">
+<img src="assets/docs/intothewoods-jshint.png" alt="JSHint results for game page">
 </details>
 
 All JavaScript files tested through JSHint returned no errors or warnings when the 'ES6' option was selected and all files were tested together.
@@ -85,8 +85,8 @@ All JavaScript files tested through JSHint returned no errors or warnings when t
 I did extra accessibility testing of the site using [WAVE](https://wave.webaim.org/) 
 
 <details><summary>Wave Test Results</summary>
-<img src="assets/images/intothewoods-wavetest.png" alt="Wave test results for game page with no errors">
-<img src="assets/images/intothewoods-audioalert.png" alt="Wave test results alert for audio">
+<img src="assets/docs/intothewoods-wavetest.png" alt="Wave test results for game page with no errors">
+<img src="assets/docs/intothewoods-audioalert.png" alt="Wave test results alert for audio">
 </details>
 
 The results of the wave test show no errors on the page. The audio alert is a warning to let me know that I have audio on the page and may need to include a transcript. I have chosen not to include a transcript as the audio is ambient music and not necessary for the game. The audio is also controlled by the user and can be turned on and off at any time.
@@ -113,9 +113,9 @@ At this time the game is designed only as a demo, however, it has been created w
 > * Create a game that is fun and engaging.
 
 <details><summary>Inventory Features</summary>
-<img src="assets/images/idonthavetheamulet.png" alt="Game screenshot without necessary items. You don't have the amulet">
-<img src="assets/images/ihavetheamulet.png" alt="Game screenshot with necessary items. You have the amulet">
-<img src="assets/images/itsdarkoutside.png" alt="Game screenshot with necessary items. It's dark outside">
+<img src="assets/docs/idonthavetheamulet.png" alt="Game screenshot without necessary items. You don't have the amulet">
+<img src="assets/docs/ihavetheamulet.png" alt="Game screenshot with necessary items. You have the amulet">
+<img src="assets/docs/itsdarkoutside.png" alt="Game screenshot with necessary items. It's dark outside">
 </details>
 
 The game is designed to be fun and engaging with ten different endings and a variety of choices to make with the game to add ambient music and small implementation of inventory functionality to enhance the experience with users needing certain items for specific sections of the game, starting with the flashlight in order to look around outside.
@@ -123,7 +123,7 @@ The game is designed to be fun and engaging with ten different endings and a var
 > * Design the game to be visually appealing.
 
 <details><summary>Responsive Design</summary>
-<img src="assets/images/intothewoods-responsive.png" alt="Responsive design of the page">
+<img src="assets/docs/intothewoods-responsive.png" alt="Responsive design of the page">
 </details>
 
 The game is designed to be visually appealing with a simple design and responsive layout that is easy to navigate and play on all devices.
@@ -135,7 +135,7 @@ The game is designed to be responsive and accessible with a simple design and re
 > * Create seamless interactivity that can't be accidentally broken by the user.
 
 <details><summary>404</summary>
-<img src="assets/images/intothewoods-404.png" alt="404 page">
+<img src="assets/docs/intothewoods-404.png" alt="404 page">
 </details>
 
 Javascript funtions have been implemented within the game container so that only options that take the user to the next part of the game are clickable. The navigation bar is always visible at the top of the page to access any extra features. The 404 page is designed to navigate the user back to the game page if an incorrect url is entered.
@@ -145,7 +145,7 @@ Javascript funtions have been implemented within the game container so that only
 > * I want to be able to easily navigate through the game.
 
 <details><summary>Simple navigation</summary>
-<img src="assets/images/intothewoods-wholepage.png" alt="The whole page including navigation and game container">
+<img src="assets/docs/intothewoods-wholepage.png" alt="The whole page including navigation and game container">
 </details>
 
 The game is designed to be simple to navigate. The navigation bar is always visible at the top of the page to access any extra features and the game is designed to be played with a single click of the mouse. The game is also designed to be played on mobile devices with a single tap of the screen. The about section is available at the start of the game with credits available at the end of the game.
@@ -153,7 +153,7 @@ The game is designed to be simple to navigate. The navigation bar is always visi
 > * I want to be able to see the different endings I have discovered.
 
 <details><summary>Achievements</summary>
-<img src="assets/images/intothewoods-allachievements.png" alt="Achievements">
+<img src="assets/docs/intothewoods-allachievements.png" alt="Achievements">
 </details>
 
 The achievements modal is designed to show the user which endings they have discovered. The achievements modal is also designed to be simple to navigate with a single click of the mouse or tap of the screen and is always available in the navigation bar.
@@ -161,7 +161,7 @@ The achievements modal is designed to show the user which endings they have disc
 > * I want to be able to see which items I have in my inventory.
 
 <details><summary>Inventory</summary>
-<img src="assets/images/intothewoods-inventory.png" alt="Inventory">
+<img src="assets/docs/intothewoods-inventory.png" alt="Inventory">
 </details>
 
 The inventory modal is designed to show the user which items they have in their inventory. The inventory modal is also designed to be simple to navigate with a single click of the mouse or tap of the screen and is always available in the navigation bar.

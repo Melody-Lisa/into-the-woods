@@ -1,6 +1,6 @@
 # Into the Woods
 
-<img src="assets/images/intothewoods-responsive.png" alt="An image representing how the site looks across different devices of varying size.">
+<img src="assets/docs/intothewoods-responsive.png" alt="An image representing how the site looks across different devices of varying size.">
 
 By Melody Lisa.
 
@@ -110,31 +110,31 @@ As the site has only one page there will be no navigation route. The links at th
 All wireframes have been created with [Figma](https://figma.com/).
 
 <details><summary>Into the Woods Desktop Wireframe</summary>
-<img src="assets/images/intothewoods-desktopwireframe.png" alt="Desktop wireframe made with figma">
+<img src="assets/docs/intothewoods-desktopwireframe.png" alt="Desktop wireframe made with figma">
 </details>
 
 <details><summary>Into the Woods Tablet Wireframe</summary>
-<img src="assets/images/intothewoods-tabletwireframe.png" alt="Tablet wireframe made with figma">
+<img src="assets/docs/intothewoods-tabletwireframe.png" alt="Tablet wireframe made with figma">
 </details>
 
 <details><summary>Into the Woods Mobile Wireframe</summary>
-<img src="assets/images/intothewoods-mobilewireframe.png" alt="Mobile wireframe made with figma">
+<img src="assets/docs/intothewoods-mobilewireframe.png" alt="Mobile wireframe made with figma">
 </details>
 
 <details><summary>Into the Woods Modals Wireframe</summary>
-<img src="assets/images/intothewoods-inventorywireframe.png" alt="Inventory modal wireframe made with figma">
+<img src="assets/docs/intothewoods-inventorywireframe.png" alt="Inventory modal wireframe made with figma">
 
-<img src="assets/images/intothewoods-achievementswireframe.png" alt="Achievements modal wireframe made with figma">
+<img src="assets/docs/intothewoods-achievementswireframe.png" alt="Achievements modal wireframe made with figma">
 </details>
 
 The wireframes featured here are the final versions of the wireframes. The original wireframes were created with the idea of having multiple game containers for the inventory and achievements sections. After some consideration I decided to use only one container and implement modals for the smaller sections. This would allow for more seamless styling for the game container.
 
 <details><summary>Original Desktop Wireframe</summary>
-<img src="assets/images/intothewoods-originaldesktopwireframe.png" alt="Original desktop wireframe showing multiple containers for different game sections">
+<img src="assets/docs/intothewoods-originaldesktopwireframe.png" alt="Original desktop wireframe showing multiple containers for different game sections">
 </details>
 
 <details><summary>Original Mobile Wireframe</summary>
-<img src="assets/images/intothewoods-originalmobilewireframe.png" alt="Original mobile wireframe showing multiple containers for different game sections">
+<img src="assets/docs/intothewoods-originalmobilewireframe.png" alt="Original mobile wireframe showing multiple containers for different game sections">
 </details>
 
 In the original wireframes I wanted to implement a feature that would allow the user to click on the inventory and achievements icons to toggle the content in the secondary container. After some consideration I decided to use modals for these sections instead as it would allow for more seamless styling for the game container and would be more user friendly. Future versions of the site may allow for the achievements to be viewed on a different page completely with more space to play with the inventory section.
@@ -161,7 +161,7 @@ The colour scheme for the site was kept as simple as possible to avoid too much 
 
 
 <details><summary>Main colour scheme for the site</summary>
-<img src="assets/images/intothewoods-colourpallet.png" alt="Colour pallet made with figma features parchment brown, black for the game container and outer text, red for the buttons, silver/grey for in-game font, and blue and purple for the linkedin and github icon hover effects respectively.">
+<img src="assets/docs/intothewoods-colourpallet.png" alt="Colour pallet made with figma features parchment brown, black for the game container and outer text, red for the buttons, silver/grey for in-game font, and blue and purple for the linkedin and github icon hover effects respectively.">
 </details>
 
 Colour scheme images made with [figma](https://figma.com).
@@ -175,7 +175,7 @@ Colour scheme images made with [figma](https://figma.com).
 ### Favicon
 
 <details><summary>Favicon</summary>
-<img src="assets/images/intothewoods-favicon.png" alt="The favicon for the site, a red circle background with a white W.">
+<img src="assets/docs/intothewoods-favicon.png" alt="The favicon for the site, a red circle background with a white W.">
 </details>
 
 The favicon for the site is a red circle with a white W. This is a simple design that is easy to recognise and matches the colour scheme of the site. The favicon was created using [favicon.io](https://favicon.io/).
@@ -184,13 +184,13 @@ The favicon for the site is a red circle with a white W. This is a simple design
 ### Header
 
 <details><summary>Header</summary>
-<img src="assets/images/intothewoods-header.png" alt="The header featured at the top of the page, titled 'Into the Woods'">
+<img src="assets/docs/intothewoods-header.png" alt="The header featured at the top of the page, titled 'Into the Woods'">
 </details>
 
 The header "Into the Woods" appears at the top of the page in all screen sizes.
 
 <details><summary>Navbar</summary>
-<img src="assets/images/intothewoods-navbar.png" alt="The navigation featured at the top of the page below the header, there are three icons that can be clicked to view inventory, view achievements, and toggle music">
+<img src="assets/docs/intothewoods-navbar.png" alt="The navigation featured at the top of the page below the header, there are three icons that can be clicked to view inventory, view achievements, and toggle music">
 </details>
 
 The navbar contains three icons that can be clicked to view the inventory, view achievements, and toggle music. The inventory and achievements icons open modals that contain the inventory and achievements text nodes. The music icon toggles the music on and off.
@@ -198,28 +198,28 @@ The navbar contains three icons that can be clicked to view the inventory, view 
 ### Main
 
 <details><summary>Game Container</summary>
-<img src="assets/images/intothewoods-gamecontainer.png" alt="The game container featured below the navbar, this is where the game is played.">
+<img src="assets/docs/intothewoods-gamecontainer.png" alt="The game container featured below the navbar, this is where the game is played.">
 </details>
 
 <details><summary>About Section</summary>
-<img src="assets/images/intothewoods-about.png" alt="The about section featured within the game container, this is where the user can find out more about the game.">
+<img src="assets/docs/intothewoods-about.png" alt="The about section featured within the game container, this is where the user can find out more about the game.">
 </details>
 
 <details><summary>Game</summary>
-<img src="assets/images/intothewoods-game.png" alt="The game container featured below the navbar, this is where the game is played.">
+<img src="assets/docs/intothewoods-game.png" alt="The game container featured below the navbar, this is where the game is played.">
 </details>
 
 <details><summary>Item Specific Options</summary>
-<img src="assets/images/idonthavetheamulet.png" alt="Game options tailored to which items you have. We don't have the amulet here.">
-<img src="assets/images/ihavetheamulet.png" alt="Game options tailored to which items you have. We do have the amulet here.">
+<img src="assets/docs/idonthavetheamulet.png" alt="Game options tailored to which items you have. We don't have the amulet here.">
+<img src="assets/docs/ihavetheamulet.png" alt="Game options tailored to which items you have. We do have the amulet here.">
 </details>
 
 <details><summary>Endings</summary>
-<img src="assets/images/intothewoods-ending.png" alt="The endings text node that is opened when the game container.">
+<img src="assets/docs/intothewoods-ending.png" alt="The endings text node that is opened when the game container.">
 </details>
 
 <details><summary>Credits</summary>
-<img src="assets/images/intothewoods-credit.png" alt="The credits text node that is opened when the game container.">
+<img src="assets/docs/intothewoods-credit.png" alt="The credits text node that is opened when the game container.">
 </details>
 
 The game container appears in the center of the page and is where the game is played. The game container contains the about section, game, endings and credits text nodes. 
@@ -233,13 +233,13 @@ The game container appears in the center of the page and is where the game is pl
 ### Modals
 
 <details><summary>Inventory Modal</summary>
-<img src="assets/images/intothewoods-inventory.png" alt="The inventory modal that is opened when the inventory icon is clicked in the navbar.">
+<img src="assets/docs/intothewoods-inventory.png" alt="The inventory modal that is opened when the inventory icon is clicked in the navbar.">
 </details>
 
 The inventory modal can be opened at any time during gameplay and does not affect the game. The inventory modal contains the items that the user has collected during a playthrough. This will be cleared every time the user begins a new game as there is a section of the game that shows different options based on the inventory items the player has.
 
 <details><summary>Achievements Modal</summary>
-<img src="assets/images/intothewoods-achievements.png" alt="The achievements modal that is opened when the achievements icon is clicked in the navbar.">
+<img src="assets/docs/intothewoods-achievements.png" alt="The achievements modal that is opened when the achievements icon is clicked in the navbar.">
 </details>
 
 The achievements modal can be opened at any time during gameplay and does not affect the game. The achievements modal contains the endings that the user has collected over multiple playthroughs. This is not cleared every time the user begins a new game so that the user can see which endings they have collected.
@@ -247,7 +247,7 @@ The achievements modal can be opened at any time during gameplay and does not af
 ### Footer
 
 <details><summary>Footer</summary>
-<img src="assets/images/intothewoods-footer.png" alt="The footer featured at the bottom of the page, this contains the social media links and copyright information.">
+<img src="assets/docs/intothewoods-footer.png" alt="The footer featured at the bottom of the page, this contains the social media links and copyright information.">
 </details>
 
 The footer contains the copyright information and social media links. The social media links open in a new tab.
@@ -255,7 +255,7 @@ The footer contains the copyright information and social media links. The social
 ### 404 Page
 
 <details><summary>404 Page</summary>
-<img src="assets/images/intothewoods-404.png" alt="The 404 page that is shown when the user types in an incorrect url.">
+<img src="assets/docs/intothewoods-404.png" alt="The 404 page that is shown when the user types in an incorrect url.">
 </details>
 
 The 404 page is a custom page that redirects the user to the main page if they type in an incorrect url.
