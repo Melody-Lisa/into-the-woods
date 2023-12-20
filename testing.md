@@ -206,6 +206,7 @@ Additional testing has been carried out by friends and colleagues including on a
 | GitHub icon in footer | Link opens to my GitHub in a new tab | Clicked icon | Link opens in a new tab | __Pass__ |
 | GitHub hover effect | Icon changes colour to purple | Hover mouse over icon | Colour changes to purple | __Pass__ |
 | 404 page | 404 page appears when incorrect url is entered | Entered incorrect url | 404 page appears | __Pass__ |
+| 404 return to game link | Returns user to main page when clicked | Clicked link | User is returned to game | __Pass__ |
 | Aria labels on links | Provides descriptions of links across the site | Browsed site on desktop and mobile with screen readers active | Screen readers read descriptions of links | __Pass__ |
 
 <sup><sub>[*Back to top*](#contents)</sup></sub>
