@@ -334,7 +334,7 @@ The fonts used across the game have had letter spacing added to improve readabil
 
 * [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
 
-* [Pexels](https://pexels.com/) - For background image and music.
+* [Pexels](https://pexels.com/) - For background image.
 
 * [Pixabay](https://pixabay.com/) - For music.
 
