@@ -181,4 +181,9 @@ h1 {
     .copyright {
         font-size: small;
     }
+
+    .second-grid {
+        grid-template-columns: repeat(1, auto);
+        font-size: 0.8rem;
+    }
 }
