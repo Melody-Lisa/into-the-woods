@@ -244,6 +244,12 @@ The inventory modal can be opened at any time during gameplay and does not affec
 
 The achievements modal can be opened at any time during gameplay and does not affect the game. The achievements modal contains the endings that the user has collected over multiple playthroughs. This is not cleared every time the user begins a new game so that the user can see which endings they have collected.
 
+<details><summary>Mobile View Modal</summary>
+<img src="assets/docs/intothewoods-mobilemodal.png" alt="The mobile view modal that is opened when the mobile view icon is clicked in the navbar.">
+</details>
+
+On mobile the grid layout of the game container is changed to a single column to make the list items easier to view on smaller screens.
+
 ### Footer
 
 <details><summary>Footer</summary>
